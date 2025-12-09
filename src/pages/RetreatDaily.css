@@ -1,0 +1,491 @@
+/* RetreatDaily.css - Light & Beautiful Theme */
+
+/* ===== BASE STYLES ===== */
+.retreat-daily.retreat-section {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #f5f3ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .retreat-daily.retreat-section {
+    padding: 40px 16px;
+  }
+}
+
+/* Decorative background elements */
+.retreat-daily::before {
+  position: absolute;
+  top: -150px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(168, 85, 247, 0.08) 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.retreat-daily::after {
+  position: absolute;
+  bottom: -150px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.08) 0%, rgba(94, 234, 212, 0.08) 100%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* ===== INNER CONTAINER ===== */
+.retreat-daily-inner.retreat-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== TITLE STYLING ===== */
+.retreat-daily-title {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem;
+  line-height: 1.3;
+  position: relative;
+}
+
+.retreat-daily-title::after {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #3b82f6, #a855f7);
+  border-radius: 2px;
+}
+
+/* ===== DAILY ITEM LAYOUT ===== */
+.daily-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+/* Alternate layout for even items */
+.daily-item:nth-child(even) .daily-content {
+  order: 2;
+}
+
+.daily-item:nth-child(even) .daily-image {
+  order: 1;
+}
+
+/* ===== CONTENT STYLING ===== */
+.daily-content {
+  padding: 2rem;
+}
+
+.daily-feature {
+  position: relative;
+  padding-left: 4rem;
+}
+
+/* Arrow icon */
+.feature-arrow.float-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2.5rem;
+  color: #3b82f6;
+  font-weight: 300;
+  line-height: 1;
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Feature title */
+.feature-title {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.feature-title::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #3b82f6, #a855f7);
+  border-radius: 1.5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Feature description */
+.feature-description {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #fff;
+  margin: 0;
+}
+
+/* Hover effects */
+.daily-item:hover .feature-arrow.float-icon {
+  transform: translateX(10px) translateY(-5px);
+  color: #a855f7;
+}
+
+.daily-item:hover .feature-title::after {
+  opacity: 1;
+}
+
+/* ===== IMAGE STYLING ===== */
+.daily-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+  height: 400px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.daily-image::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.05) 100%);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.daily-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.daily-item:hover .daily-image {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(59, 130, 246, 0.25);
+}
+
+.daily-item:hover .daily-img {
+  transform: scale(1.05);
+}
+
+/* ===== ITEM NUMBER DECORATION ===== */
+.daily-item::before {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 8rem;
+  font-weight: 700;
+  color: rgba(59, 130, 246, 0.08);
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.daily-item-1::before { top: -2rem; left: -2rem; }
+.daily-item-2::before { top: -2rem; right: -2rem; }
+.daily-item-3::before { top: -2rem; left: -2rem; }
+.daily-item-4::before { top: -2rem; right: -2rem; }
+.daily-item-5::before { top: -2rem; left: -2rem; }
+.daily-item-6::before { top: -2rem; right: -2rem; }
+
+/* ===== ANIMATION SUPPORT ===== */
+.daily-item {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.daily-item-1 { animation-delay: 0.1s; }
+.daily-item-2 { animation-delay: 0.2s; }
+.daily-item-3 { animation-delay: 0.3s; }
+.daily-item-4 { animation-delay: 0.4s; }
+.daily-item-5 { animation-delay: 0.5s; }
+.daily-item-6 { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Tablets */
+@media (max-width: 992px) {
+  .retreat-daily.retreat-section {
+    padding: 80px 20px;
+  }
+  
+  .retreat-daily-title {
+    font-size: 2.7rem;
+    margin-bottom: 4rem;
+  }
+  
+  .daily-item {
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+  
+  .feature-title {
+    font-size: 1.9rem;
+  }
+  
+  .feature-description {
+    font-size: 1.05rem;
+  }
+  
+  .daily-image {
+    height: 350px;
+  }
+  
+  .daily-feature {
+    padding-left: 3.5rem;
+  }
+  
+  .feature-arrow.float-icon {
+    font-size: 2.2rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .retreat-daily.retreat-section {
+    padding: 70px 20px;
+  }
+  
+  .retreat-daily-title {
+    font-size: 2.3rem;
+  }
+  
+  .daily-item {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Reset order for mobile - ensure all items display in order */
+  .daily-item:nth-child(even) .daily-content,
+  .daily-item:nth-child(even) .daily-image {
+    order: unset;
+  }
+  
+  .daily-item .daily-content {
+    order: 0;
+  }
+  
+  .daily-item .daily-image {
+    order: 1;
+  }
+  
+  .daily-content {
+    padding: 0;
+    width: 100%;
+  }
+  
+  .daily-image {
+    width: 100%;
+  }
+  
+  .feature-title {
+    font-size: 1.8rem;
+  }
+  
+  .daily-image {
+    height: 300px;
+  }
+  
+  /* Adjust decorative circles */
+  .retreat-daily::before,
+  .retreat-daily::after {
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* Remove positioning issues that hide content */
+  .daily-item::before {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .retreat-daily.retreat-section {
+    padding: 60px 15px;
+  }
+  
+  .retreat-daily-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .daily-item {
+    margin-bottom: 3.5rem;
+    gap: 2rem;
+  }
+  
+  .daily-feature {
+    padding-left: 3rem;
+  }
+  
+  .feature-arrow.float-icon {
+    font-size: 2rem;
+  }
+  
+  .feature-title {
+    font-size: 1.6rem;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .daily-image {
+    height: 250px;
+    border-radius: 16px;
+  }
+  
+  /* Hide decorative circles on very small screens */
+  .retreat-daily::before,
+  .retreat-daily::after {
+    display: none;
+  }
+  
+  /* Adjust item numbers */
+  .daily-item::before {
+    font-size: 5rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 375px) {
+  .retreat-daily-title {
+    font-size: 1.8rem;
+  }
+  
+  .daily-item {
+    margin-bottom: 3rem;
+  }
+  
+  .daily-feature {
+    padding-left: 2.5rem;
+  }
+  
+  .feature-arrow.float-icon {
+    font-size: 1.8rem;
+  }
+  
+  .feature-title {
+    font-size: 1.4rem;
+  }
+  
+  .feature-description {
+    font-size: 0.95rem;
+  }
+  
+  .daily-image {
+    height: 220px;
+  }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .retreat-daily.retreat-section {
+    background: white !important;
+    padding: 50px 0 !important;
+  }
+  
+  .daily-image {
+    box-shadow: none !important;
+    border: 1px solid #e0e0e0 !important;
+  }
+  
+  .retreat-daily-title {
+    color: #000 !important;
+  }
+  
+  .retreat-daily-title::after {
+    background: #000 !important;
+  }
+  
+  /* Hide decorative elements for print */
+  .retreat-daily::before,
+  .retreat-daily::after,
+  .daily-item::before,
+  .daily-image::before,
+  .feature-title::after {
+    display: none !important;
+  }
+}
+
+/* ===== DARK MODE SUPPORT ===== */
+@media (prefers-color-scheme: dark) {
+  .retreat-daily.retreat-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  }
+  
+  .retreat-daily-title {
+    color: #ffffff;
+  }
+  
+  .feature-title {
+    color: #e2e8f0;
+  }
+  
+  .feature-description {
+    color: #cbd5e0;
+  }
+  
+  .feature-arrow.float-icon {
+    color: #60a5fa;
+  }
+  
+  .daily-item:hover .feature-arrow.float-icon {
+    color: #a855f7;
+  }
+  
+  .daily-image {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .daily-item:hover .daily-image {
+    box-shadow: 0 30px 60px rgba(59, 130, 246, 0.4);
+  }
+  
+  /* Adjust decorative circles for dark mode */
+  .retreat-daily::before {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(168, 85, 247, 0.05) 100%);
+  }
+  
+  .retreat-daily::after {
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.05) 0%, rgba(94, 234, 212, 0.05) 100%);
+  }
+  
+  /* Adjust item numbers for dark mode */
+  .daily-item::before {
+    color: rgba(59, 130, 246, 0.05);
+  }
+}

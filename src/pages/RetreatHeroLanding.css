@@ -1,0 +1,134 @@
+/* Retreat Hero Section - Clean, Responsive, Unique Classnames */
+
+.retreat-hero-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
+  background: url('/SparkWritersRetreat/herobackgrounf.jpg') center/cover no-repeat;
+  background-attachment: scroll;
+}
+
+/* make sure on narrow screens the image favors top/center so important visual crop remains visible */
+@media (max-width: 520px) {
+  .retreat-hero-main { background-position: center top; }
+}
+
+.retreat-hero-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.28) 60%, rgba(0,0,0,0.6) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.retreat-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  /* responsive max width: use viewport percentage while capping at a sensible max */
+  max-width: min(86vw, 720px);
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 0 18px;
+}
+
+.retreat-hero-title {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  /* fluid typography: smaller on phones, larger on desktop but capped */
+  font-size: clamp(1.6rem, 4.8vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  position: relative;
+}
+.retreat-hero-title::after {
+  display: block;
+  margin: 0.7rem auto 0 auto;
+  width: 90px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+}
+
+.retreat-hero-desc {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: clamp(0.95rem, 2.6vw, 1.15rem);
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.retreat-hero-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+}
+
+.retreat-hero-btn-primary {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.95rem 0.8rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.12rem);
+  font-weight: 600;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(90deg, #ffe259 0%, #ffd700 100%);
+  color: #222;
+  box-shadow: 0 6px 24px rgba(255, 215, 0, 0.18);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  margin: 0 auto;
+  display: block;
+}
+.retreat-hero-btn-primary:hover {
+  box-shadow: 0 10px 32px rgba(255, 215, 0, 0.28);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.retreat-hero-btn-secondary {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.95rem 0.8rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.12rem);
+  font-weight: 600;
+  border-radius: 999px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s, transform 0.2s;
+  margin: 0 auto;
+  display: block;
+}
+.retreat-hero-btn-secondary:hover {
+  background: rgba(255,255,255,0.08);
+  color: #ffd700;
+  border-color: #ffd700;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Larger tablets */
+@media (min-width: 600px) {
+  .retreat-hero-main { padding: 56px 0 36px; }
+  .retreat-hero-content { max-width: min(88vw, 720px); padding: 0 28px; }
+  .retreat-hero-title { font-size: clamp(2.2rem, 3.6vw, 3.4rem); }
+  .retreat-hero-desc { font-size: clamp(1rem, 1.8vw, 1.25rem); }
+}
+
+/* Desktop and larger */
+@media (min-width: 900px) {
+  .retreat-hero-main { padding: 80px 0 48px; }
+  .retreat-hero-content { max-width: 720px; padding: 0 44px; }
+  .retreat-hero-title { font-size: clamp(2.8rem, 2.9vw, 3.6rem); }
+  .retreat-hero-desc { font-size: clamp(1.05rem, 1.5vw, 1.25rem); }
+}
