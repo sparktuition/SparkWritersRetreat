@@ -16,6 +16,7 @@ import RetreatStay from './pages/RetreatStay';
 import BookWritingPlan from './pages/BookWritingPlan';
 import Contact from './pages/Contact';
 import WhatsappFloat from './components/WhatsappFloat';
+import SEO from './components/SEO';
 import './pages/RetreatBase.css'
 import './pages/RetreatAnimations.css'
 import AOS from 'aos';
@@ -27,6 +28,7 @@ const RetreatPage: React.FC = () => {
   }, []);
   return (
     <div className="retreat-page-container">
+      <SEO />
       {/* 1. Welcome & Registration */}
       <div data-aos="fade-down" data-aos-duration="900"><RetreatHeroLanding /></div>
       {/* 2. Overview & Inspiration */}

@@ -1,3 +1,24 @@
+.villa-viewall-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.villa-viewall-btn {
+  background: linear-gradient(135deg, #64b5f6 0%, #ab47bc 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(100, 181, 246, 0.15);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.villa-viewall-btn:hover {
+  background: linear-gradient(135deg, #ab47bc 0%, #64b5f6 100%);
+  box-shadow: 0 4px 18px rgba(171, 71, 188, 0.18);
+}
 /* RetreatVilla.css - Light & Beautiful Theme */
 
 /* ===== BASE STYLES ===== */

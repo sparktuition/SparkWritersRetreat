@@ -14,7 +14,9 @@ const villaImageFiles = [
 
 const RetreatVilla: React.FC = () => {
 
-
+  const [showAll, setShowAll] = React.useState(false);
+  const previewCount = 4;
+  const imagesToShow = showAll ? villaImageFiles : villaImageFiles.slice(0, previewCount);
 
   return (
     <section className="retreat-villa retreat-section parallax-bg">
@@ -23,7 +25,7 @@ const RetreatVilla: React.FC = () => {
 
         {/* Gallery Section */}
         <div className="villa-gallery">
-          {villaImageFiles.map((filename, idx) => (
+          {imagesToShow.map((filename, idx) => (
             <div key={idx} className="gallery-item">
               <div className="villa-img-container">
                 <img
@@ -35,10 +37,13 @@ const RetreatVilla: React.FC = () => {
             </div>
           ))}
         </div>
-
-
-         
-        
+        {!showAll && (
+          <div className="villa-viewall-wrapper">
+            <button className="villa-viewall-btn" onClick={() => setShowAll(true)}>
+              View All Photos
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

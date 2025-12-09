@@ -18,11 +18,11 @@ const TransportArrangements: React.FC = () => (
           <span className="slot-label">Pickup Slot 2</span>
         </div>
       </div>
-      <div className="transport-note parallax-bg">
+      
         <span>
           <strong>Note:</strong> Please book your flight or train to Amritsar and share your arrival details with us for a smooth pickup experience.
         </span>
-      </div>
+    
     </div>
   </div>
 );
