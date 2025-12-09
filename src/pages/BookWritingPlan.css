@@ -45,11 +45,10 @@
 .book-writing-plan-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-text-highlight);
+  color: #000000;
   margin-bottom: 3rem;
   text-align: center;
-  /* Glowing text effect for a futuristic touch */
-  text-shadow: 0 0 10px rgba(138, 43, 226, 0.5); 
+  /* Removed glow effect */
 }
 
 /* --- Topic List (The Core Plan) --- */

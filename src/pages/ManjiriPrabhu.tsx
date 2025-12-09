@@ -165,12 +165,7 @@ const AuthorPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="author-website">
-              <a href="https://manjiriprabhu.in" target="_blank" rel="noopener noreferrer" className="website-link">
-                <Globe size={18} />
-                <span>Visit Official Website: manjiriprabhu.in</span>
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>
