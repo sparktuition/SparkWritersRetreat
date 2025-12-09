@@ -2,7 +2,7 @@ import React from "react";
 import "./BookWritingPlan.css";
 
 const topics = [
-  "Plot Development Basics: How to shape your story’s core idea into a structured plot.",
+  "Plot Development Basics: How to shape your story's core idea into a structured plot.",
   "Character Creation: Building believable and compelling characters.",
   "Crafting the Hero: Developing a memorable protagonist.",
   "Villains and Antagonists: Creating strong conflicts and opposing forces.",
@@ -15,14 +15,14 @@ const topics = [
   "Creative Language: Using metaphors, similes, and alliteration effectively.",
   "Scene Structuring: Building impactful scenes and chapters.",
   "Writing Descriptions: Painting vivid pictures with words.",
-  "Internal Monologue: Exploring your characters’ thoughts and emotions.",
+  "Internal Monologue: Exploring your characters' thoughts and emotions.",
   "Building Subplots: Adding layers to your main storyline.",
   "Writing Emotionally Resonant Scenes: Evoking feelings in your readers.",
   "Humor and Wit: Incorporating humor where appropriate.",
   "Building to a Climax: Structuring the peak of your story.",
   "Resolutions and Endings: Crafting satisfying conclusions.",
   "Editing and Revising: Tips for polishing your draft.",
-  "Overcoming Writer’s Block: Strategies for staying creative.",
+  "Overcoming Writer's Block: Strategies for staying creative.",
   "Maintaining Consistency: Ensuring continuity in your narrative.",
   "Foreshadowing and Suspense: Using hints to build anticipation.",
   "Writing Different Genres: Adapting your style to various genres.",
@@ -38,17 +38,11 @@ const BookWritingPlan: React.FC = () => (
       <h2 className="book-writing-plan-title">Book Writing Plan: 28 Class Topics</h2>
       <ol className="book-writing-plan-list stagger-list">
         {topics.map((topic, idx) => (
-          <li className="float-icon" key={idx}><span className="topic-number">{idx + 1}.</span> {topic}</li>
+          <li className="topic-item" key={idx}><span className="topic-number">{idx + 1}.</span> {topic}</li>
         ))}
       </ol>
 
-      <div className="book-writing-plan-bonus">
-        <div className="bonus-icon">✨</div>
-        <h3 className="bonus-title">Publishing Support</h3>
-        <p className="bonus-text">
-          Once your book is ready, <strong>Publishing Guidance and ISBN Number will be provided as free</strong> to help you get your work published and distributed successfully.
-        </p>
-      </div>
+      
     </div>
   </section>
 );

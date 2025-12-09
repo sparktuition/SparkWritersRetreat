@@ -1,16 +1,45 @@
 import React from 'react'
 import './RetreatHeroLanding.css'
 
-
 const RetreatHeroLanding: React.FC = () => {
   return (
     <section className="retreat-hero-main">
       <div className="retreat-hero-overlay" />
       <div className="retreat-hero-content">
-        <h1 className="retreat-hero-title big-title">The Spark Writers’ Retreat</h1>
-        <p className="retreat-hero-desc big-desc">
-          <span className="retreat-hero-highlight">Hosted by Spark Igniting Minds Publishing House</span>, is designed for writers who wish to create <strong>fiction, non-fiction, memoirs, biographies, poetry</strong>, or any book that seeks to <strong>inform, inspire, or illuminate a meaningful topic</strong>.
+        {/* Trust Badge */}
+        <div className="retreat-hero-badge">
+          
+          <span>Only 20 Seats · March 1-8, 2026 · Dalhousie, Himalayas</span>
+        </div>
+        
+        <h1 className="retreat-hero-title big-title">
+          Write Your Book in 7 Days<br />
+          <span className="hero-highlight-line">In the Heart of the Himalayas</span>
+        </h1>
+        
+        <p className="retreat-hero-tagline">
+          India's Premier Writers' Retreat with Award-Winning Mentors
         </p>
+        
+        <div className="retreat-hero-usps">
+         <div className="usp-item">
+            <span>4 Acclaimed Authors as Your Personal Mentors</span>
+          </div>
+        <div className="usp-item">
+            <span>Luxury Villa Stay Amid Himalayan Serenity</span>
+          </div>
+       
+          <div className="usp-item">
+            <span>Free ISBN + Publishing Guidance Included</span>
+          </div>
+        </div>
+
+
+       
+        <div className="retreat-hero-trust">
+          
+          <span>All-inclusive: Stay, Meals, Sessions, Transport from Amritsar</span>
+        </div>
       </div>
     </section>
   )

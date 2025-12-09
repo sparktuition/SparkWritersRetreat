@@ -1,467 +1,277 @@
-/* RetreatCuisine.css - Light & Beautiful Theme */
-
-/* ===== BASE STYLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* Retreat Cuisine Section - Modern Light Theme */
 .retreat-cuisine-section {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #fff5f5 0%, #fff0f5 100%);
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
   position: relative;
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .retreat-cuisine-section {
-    padding: 40px 16px;
-  }
+.theme-rose {
+  background: linear-gradient(135deg, #ffffff 0%, #fff5f7 100%);
 }
 
-/* Rose theme variation */
-.retreat-cuisine-section.theme-rose {
-  background: linear-gradient(135deg, #fff5f7 0%, #fdf2f8 100%);
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* Decorative background elements */
+/* Modern gradient overlay */
 .retreat-cuisine-section::before {
+  content: '';
   position: absolute;
-  top: -150px;
-  right: -100px;
-  width: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 400px;
-  background: linear-gradient(135deg, rgba(251, 113, 133, 0.08) 0%, rgba(244, 114, 182, 0.08) 100%);
-  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, transparent 100%);
   z-index: 1;
 }
 
 .retreat-cuisine-section::after {
+  content: '';
   position: absolute;
-  bottom: -150px;
-  left: -100px;
-  width: 400px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 400px;
-  background: linear-gradient(135deg, rgba(251, 146, 60, 0.08) 0%, rgba(251, 191, 36, 0.08) 100%);
-  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, transparent 100%);
   z-index: 1;
 }
 
-/* ===== INNER CONTAINER ===== */
 .retreat-cuisine-inner {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
   position: relative;
   z-index: 2;
 }
 
-/* ===== TITLE STYLING ===== */
 .retreat-cuisine-title {
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
-  font-size: 3.2rem;
-  font-weight: 600;
-  color: #fff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #ffffff;
   text-align: center;
-  margin-bottom: 4rem;
-  line-height: 1.3;
-  position: relative;
-  padding-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 .retreat-cuisine-title::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  content: '';
+  display: block;
   width: 80px;
   height: 4px;
-  background: linear-gradient(to right, #f472b6, #fb7185);
+  background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+  margin: 1.5rem auto;
   border-radius: 2px;
 }
 
-/* ===== CONTENT CONTAINER ===== */
 .retreat-cuisine-content {
-  background: white;
-  border-radius: 24px;
-  padding: 3rem;
-  box-shadow: 0 15px 40px rgba(244, 114, 182, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  position: relative;
-  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* Decorative corner accent */
-.retreat-cuisine-content::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(135deg, transparent 50%, rgba(251, 113, 133, 0.05) 50%);
-  border-top-right-radius: 24px;
-}
-
-/* ===== PARAGRAPH STYLING ===== */
-.retreat-cuisine-content p {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: #fff;
-  margin-bottom: 2rem;
-  position: relative;
-  padding-left: 2rem;
-}
-
-.retreat-cuisine-content p::before {
-  position: absolute;
-  left: 0;
-  top: 0.2rem;
-  font-size: 1.2rem;
-  opacity: 0.5;
-}
-
-.retreat-cuisine-content p:last-of-type {
-  margin-bottom: 2.5rem;
-}
-
-/* ===== LIST STYLING ===== */
-.cuisine-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-}
-
-/* ===== LIST ITEM STYLING ===== */
-.cuisine-list li {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #fff;
-  padding: 1.2rem 1.5rem;
-  background: linear-gradient(135deg, rgba(244, 114, 182, 0.05) 0%, rgba(251, 113, 133, 0.05) 100%);
-  border-radius: 12px;
-  border: 1px solid rgba(244, 114, 182, 0.1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.cuisine-list li.float-icon {
-  padding-left: 3.5rem;
-}
-
-
-.cuisine-list li.float-icon::before {
-  position: absolute;
-  left: 1.2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.3rem;
-  opacity: 0.6;
-  transition: all 0.3s ease;
-}
-
-/* Hover effects */
-.cuisine-list li:hover {
-  transform: translateY(-3px);
-  background: linear-gradient(135deg, rgba(244, 114, 182, 0.1) 0%, rgba(251, 113, 133, 0.1) 100%);
-  border-color: rgba(244, 114, 182, 0.2);
-  box-shadow: 0 8px 20px rgba(244, 114, 182, 0.15);
-  color: #881337;
-}
-
-.cuisine-list li:hover.float-icon::before {
-  opacity: 0.9;
-  transform: translateY(-50%) scale(1.1);
-}
-
-/* Hover accent line */
-.cuisine-list li::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background: linear-gradient(to right, #f472b6, #fb7185);
-  transition: width 0.3s ease;
-  border-radius: 1px;
-}
-
-.cuisine-list li:hover::after {
-  width: 60%;
-}
-
-/* ===== ANIMATION SUPPORT ===== */
 .stagger-list {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-  animation-delay: 0.2s;
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
-
-.stagger-list p {
-  opacity: 0;
-  transform: translateX(-20px);
-  animation: fadeInLeft 0.6s ease forwards;
-}
-
-.stagger-list p:nth-child(1) { animation-delay: 0.3s; }
-.stagger-list p:nth-child(2) { animation-delay: 0.4s; }
-
-.stagger-list .cuisine-list li {
-  opacity: 0;
-  transform: translateY(15px);
-  animation: fadeInUp 0.5s ease forwards;
-}
-
-.stagger-list .cuisine-list li:nth-child(1) { animation-delay: 0.5s; }
-.stagger-list .cuisine-list li:nth-child(2) { animation-delay: 0.6s; }
-.stagger-list .cuisine-list li:nth-child(3) { animation-delay: 0.7s; }
-.stagger-list .cuisine-list li:nth-child(4) { animation-delay: 0.8s; }
-.stagger-list .cuisine-list li:nth-child(5) { animation-delay: 0.9s; }
 
 @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes fadeInLeft {
-  to {
-    opacity: 1;
-    transform: translateX(0);
+.retreat-cuisine-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f7f7f7;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.retreat-cuisine-content p:first-of-type {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Modern Cuisine List */
+.cuisine-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 3rem 0 2rem;
+}
+
+.cuisine-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.cuisine-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.05), rgba(255, 142, 83, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cuisine-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(255, 107, 107, 0.2);
+}
+
+.cuisine-item:hover::before {
+  opacity: 1;
+}
+
+.cuisine-icon {
+  color: #ff6b6b;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.cuisine-item:hover .cuisine-icon {
+  transform: scale(1.1);
+  color: #ff8e53;
+}
+
+.cuisine-item span {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2d3748;
+  letter-spacing: -0.01em;
+}
+
+/* Modern decorative elements */
+.retreat-cuisine-section .floating-element {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 142, 83, 0.1));
+  filter: blur(20px);
+  z-index: 1;
+}
+
+.retreat-cuisine-section .floating-element:nth-child(1) {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: 5%;
+  animation: float 20s infinite ease-in-out;
+}
+
+.retreat-cuisine-section .floating-element:nth-child(2) {
+  width: 200px;
+  height: 200px;
+  bottom: 20%;
+  right: 10%;
+  animation: float 25s infinite ease-in-out reverse;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
   }
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-
-/* Large Tablets */
-@media (max-width: 992px) {
-  .retreat-cuisine-section {
-    padding: 80px 20px;
-  }
-  
-  .retreat-cuisine-title {
-    font-size: 2.7rem;
-    margin-bottom: 3.5rem;
-  }
-  
-  .retreat-cuisine-content {
-    padding: 2.5rem;
-  }
-  
-  .retreat-cuisine-content p {
-    font-size: 1.1rem;
-    padding-left: 1.8rem;
-  }
-  
-  .cuisine-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Tablets */
-@media (max-width: 768px) {
-  .retreat-cuisine-section {
-    padding: 70px 20px;
-  }
-  
-  .retreat-cuisine-title {
-    font-size: 2.3rem;
-  }
-  
-  .retreat-cuisine-content {
-    padding: 2rem;
-  }
-  
-  .retreat-cuisine-content p {
-    font-size: 1.05rem;
-    padding-left: 1.6rem;
-  }
-  
-  .retreat-cuisine-content p::before {
-    font-size: 1.1rem;
-  }
-  
+/* Responsive design */
+@media (max-width: 1024px) {
   .cuisine-list {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  .cuisine-list li {
-    font-size: 1rem;
-    padding: 1rem 1.2rem;
-  }
-  
-  .cuisine-list li.float-icon {
-    padding-left: 3rem;
-  }
-  
-  .cuisine-list li.float-icon::before {
-    left: 1rem;
-    font-size: 1.2rem;
-  }
-  
-  /* Adjust decorative circles */
-  .retreat-cuisine-section::before,
-  .retreat-cuisine-section::after {
-    width: 300px;
-    height: 300px;
-  }
 }
 
-/* Mobile */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .retreat-cuisine-section {
-    padding: 60px 15px;
+    padding: 4rem 0;
   }
   
-  .retreat-cuisine-title {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+  .retreat-cuisine-inner {
+    padding: 0 1.5rem;
   }
   
   .retreat-cuisine-content {
-    padding: 1.5rem;
-    border-radius: 20px;
+    padding: 0;
   }
   
   .retreat-cuisine-content p {
-    font-size: 1rem;
-    padding-left: 1.4rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
   }
   
-  .retreat-cuisine-content p::before {
-    font-size: 1rem;
+  .retreat-cuisine-title {
+    font-size: 2.2rem;
   }
   
   .cuisine-list {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
+    gap: 1rem;
   }
   
-  .cuisine-list li {
-    padding: 0.9rem 1rem;
-  }
-  
-  .cuisine-list li.float-icon {
-    padding-left: 2.8rem;
-  }
-  
-  .cuisine-list li.float-icon::before {
-    left: 0.9rem;
-    font-size: 1.1rem;
-  }
-  
-  /* Hide decorative circles on very small screens */
-  .retreat-cuisine-section::before,
-  .retreat-cuisine-section::after {
-    display: none;
+  .cuisine-item {
+    padding: 1.25rem;
   }
 }
 
-/* Small Mobile */
-@media (max-width: 375px) {
+@media (max-width: 480px) {
+  .retreat-cuisine-section {
+    padding: 3rem 0;
+  }
+  
+  .retreat-cuisine-inner {
+    padding: 0 1rem;
+  }
+  
   .retreat-cuisine-title {
     font-size: 1.8rem;
   }
   
-  .retreat-cuisine-content {
-    padding: 1.2rem;
-  }
-  
   .retreat-cuisine-content p {
-    font-size: 0.95rem;
-    line-height: 1.7;
-    padding-left: 1.2rem;
-  }
-  
-  .cuisine-list li {
-    font-size: 0.95rem;
-    padding: 0.8rem;
-  }
-  
-  .cuisine-list li.float-icon {
-    padding-left: 2.5rem;
-  }
-  
-  .cuisine-list li.float-icon::before {
-    left: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
 
-/* ===== PRINT STYLES ===== */
-@media print {
-  .retreat-cuisine-section {
-    background: white !important;
-    padding: 50px 0 !important;
-  }
-  
-  .retreat-cuisine-content {
-    box-shadow: none !important;
-    border: 1px solid #e0e0e0 !important;
-  }
-  
-  .retreat-cuisine-title {
-    color: #000 !important;
-  }
-  
-  .retreat-cuisine-title::after {
-    background: #000 !important;
-  }
-  
-  /* Hide decorative elements for print */
-  .retreat-cuisine-section::before,
-  .retreat-cuisine-section::after,
-  .retreat-cuisine-content::before,
-  .retreat-cuisine-content p::before,
-  .cuisine-list li.float-icon::before {
-    display: none !important;
-  }
+/* AOS animation compatibility */
+[data-aos="fade-up"] {
+  transform: translateY(40px);
+  opacity: 0;
+  transition-property: transform, opacity;
 }
 
-/* ===== DARK MODE SUPPORT ===== */
-@media (prefers-color-scheme: dark) {
-  .retreat-cuisine-section {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  }
-  
-  .retreat-cuisine-section.theme-rose {
-    background: linear-gradient(135deg, #1f2937 0%, #2d1b2e 100%);
-  }
-  
-  .retreat-cuisine-title {
-    color: #ffffff;
-  }
-  
-  .retreat-cuisine-content {
-    background: #2d3748;
-    color: #e2e8f0;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    border: 1px solid #4a5568;
-  }
-  
-  .retreat-cuisine-content p {
-    color: #e2e8f0;
-  }
-  
-  .cuisine-list li {
-    background: linear-gradient(135deg, rgba(244, 114, 182, 0.1) 0%, rgba(251, 113, 133, 0.1) 100%);
-    border-color: rgba(244, 114, 182, 0.2);
-    color: #f9a8d4;
-  }
-  
-  .cuisine-list li:hover {
-    background: linear-gradient(135deg, rgba(244, 114, 182, 0.15) 0%, rgba(251, 113, 133, 0.15) 100%);
-    color: #fce7f3;
-  }
-  
-  /* Adjust decorative circles for dark mode */
-  .retreat-cuisine-section::before {
-    background: linear-gradient(135deg, rgba(251, 113, 133, 0.05) 0%, rgba(244, 114, 182, 0.05) 100%);
-  }
-  
-  .retreat-cuisine-section::after {
-    background: linear-gradient(135deg, rgba(251, 146, 60, 0.05) 0%, rgba(251, 191, 36, 0.05) 100%);
-  }
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
 }

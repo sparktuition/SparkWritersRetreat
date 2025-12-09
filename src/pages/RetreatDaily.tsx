@@ -1,4 +1,5 @@
 import React from 'react'
+import { ArrowRight } from 'lucide-react';
 import './RetreatDaily.css'
 
 const RetreatDaily: React.FC = () => {
@@ -11,7 +12,9 @@ const RetreatDaily: React.FC = () => {
         <div className="daily-item daily-item-1">
           <div className="daily-content">
             <div className="daily-feature">
-              <div className="feature-arrow float-icon">→</div>
+              <div className="feature-arrow">
+                <ArrowRight size={24} />
+              </div>
               <h3 className="feature-title">Nature-Inspired Field Experiences</h3>
               <p className="feature-description">Daily walks through pristine Himalayan landscapes that spark creativity and clear mental blocks</p>
             </div>
@@ -25,7 +28,9 @@ const RetreatDaily: React.FC = () => {
         <div className="daily-item daily-item-2">
           <div className="daily-content">
             <div className="daily-feature">
-              <div className="feature-arrow float-icon">→</div>
+              <div className="feature-arrow">
+                <ArrowRight size={24} />
+              </div>
               <h3 className="feature-title">Real-Time Mentorship Support</h3>
               <p className="feature-description">Continuous access to your mentors for guidance, feedback, and creative breakthroughs</p>
             </div>
@@ -39,7 +44,9 @@ const RetreatDaily: React.FC = () => {
         <div className="daily-item daily-item-3">
           <div className="daily-content">
             <div className="daily-feature">
-              <div className="feature-arrow float-icon">→</div>
+              <div className="feature-arrow">
+                <ArrowRight size={24} />
+              </div>
               <h3 className="feature-title">Story Development Sessions</h3>
               <p className="feature-description">Structured workshops on plot, character, narrative arc, and finding your authentic voice</p>
             </div>
@@ -53,7 +60,9 @@ const RetreatDaily: React.FC = () => {
         <div className="daily-item daily-item-4">
           <div className="daily-content">
             <div className="daily-feature">
-              <div className="feature-arrow float-icon">→</div>
+              <div className="feature-arrow">
+                <ArrowRight size={24} />
+              </div>
               <h3 className="feature-title">One-on-One Creative Insights</h3>
               <p className="feature-description">Personalised consultations tailored to your specific manuscript and creative challenges</p>
             </div>
@@ -67,7 +76,9 @@ const RetreatDaily: React.FC = () => {
         <div className="daily-item daily-item-5">
           <div className="daily-content">
             <div className="daily-feature">
-              <div className="feature-arrow float-icon">→</div>
+              <div className="feature-arrow">
+                <ArrowRight size={24} />
+              </div>
               <h3 className="feature-title">Silent Writing Sanctuary</h3>
               <p className="feature-description">Protected hours of deep focus in a calm environment where your stories can truly unfold</p>
             </div>
@@ -81,7 +92,9 @@ const RetreatDaily: React.FC = () => {
         <div className="daily-item daily-item-6">
           <div className="daily-content">
             <div className="daily-feature">
-              <div className="feature-arrow float-icon">→</div>
+              <div className="feature-arrow">
+                <ArrowRight size={24} />
+              </div>
               <h3 className="feature-title">Reconnection with Your Inner Storyteller</h3>
               <p className="feature-description">A transformative experience that helps you rediscover why you were meant to write</p>
             </div>

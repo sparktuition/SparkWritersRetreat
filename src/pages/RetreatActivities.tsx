@@ -1,4 +1,5 @@
 import React from 'react';
+import { Heart, MapPin } from 'lucide-react';
 import './RetreatActivities.css';
 
 const RetreatActivities: React.FC = () => (
@@ -6,12 +7,18 @@ const RetreatActivities: React.FC = () => (
     <div className="retreat-activities-inner">
       <h2 className="retreat-activities-title">Rejuvenating Activities & Local Exploration</h2>
       <div className="retreat-activities-content">
-        <p>
-          In addition to our immersive writing sessions, we’ve planned some rejuvenating activities for you. Enjoy peaceful <span className="activities-highlight">Vipassana training sessions</span> to clear your mind, and take short walks to soak in the fresh mountain air.
-        </p>
-        <p>
-          One day is dedicated to a delightful <span className="activities-highlight">sightseeing tour of Dalhousie</span> and its surroundings. You’ll visit charming local spots and might even witness the arrival of migratory birds from Europe, making the landscape a writer’s paradise.
-        </p>
+        <div className="activity-item">
+          <Heart size={24} className="activity-icon" />
+          <p>
+            In addition to our immersive writing sessions, we have planned some rejuvenating activities for you. Enjoy peaceful <strong>Vipassana training sessions</strong> to clear your mind, and take short walks to soak in the fresh mountain air.
+          </p>
+        </div>
+        <div className="activity-item">
+          <MapPin size={24} className="activity-icon" />
+          <p>
+            One day is dedicated to a delightful <strong>sightseeing tour of Dalhousie</strong> and its surroundings. You will visit charming local spots and might even witness the arrival of migratory birds from Europe, making the landscape a writer's paradise.
+          </p>
+        </div>
       </div>
     </div>
   </section>
