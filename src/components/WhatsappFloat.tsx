@@ -5,7 +5,7 @@ const WhatsappFloat: React.FC = () => {
   const prefilledText = encodeURIComponent('Hello! I am interested in the Spark Writers’ Retreat. Please share more details.');
   return (
     <a
-      href={`https://wa.me/8050023212?text=${prefilledText}`}
+      href={`https://wa.me/918050023212?text=${prefilledText}`}
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
