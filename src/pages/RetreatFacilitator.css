@@ -90,36 +90,6 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-.facilitator-full-bio {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-top: 2rem;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.facilitator-full-bio h3 {
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffd700;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.facilitator-full-bio p {
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 1.2rem;
-  text-align: justify;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.facilitator-full-bio p:last-child {
-  margin-bottom: 0;
-}
-
 .credentials-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

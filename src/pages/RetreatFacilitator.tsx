@@ -39,7 +39,7 @@ const RetreatFacilitator: React.FC = () => {
                 </div>
                 <div className="credential-content">
                   <h4>18 Published Books</h4>
-                  <p>Fiction, non-fiction, anthologies, children's literature, and award-winning language-learning books</p>
+                  <p>Fiction, non-fiction, anthologies, children's literature, and award-winning language-learning books. Her debut novel, <em>Anand</em>, was inspired by the life of Café Coffee Day founder Siddhartha Hegde and is well-received by the Indian audience. <em>Are You Smart with Words</em> has become a favourite among schoolchildren for language learning.</p>
                 </div>
               </div>
 
@@ -59,7 +59,7 @@ const RetreatFacilitator: React.FC = () => {
                 </div>
                 <div className="credential-content">
                   <h4>NCC Career (1989-2022)</h4>
-                  <p>Commissioned Lieutenant (2006), retired as Captain. Seven Republic Day Camp accompaniments across India</p>
+                  <p>Began as an instructor with the 1 Karnataka Girls Battalion NCC in 1989. Commissioned Lieutenant (2006), retired as Captain. Seven Republic Day Camp accompaniments where the Karnataka contingent won the prestigious PM's Banner once. Served as Administrative Officer across India in key postings including Shillong, Lucknow, Vijayawada, Goa, Mysore, Kurnool, and Anantapur.</p>
                 </div>
               </div>
 
@@ -83,11 +83,12 @@ const RetreatFacilitator: React.FC = () => {
             </div>
 
             <div className="facilitator-media">
-              <span className="media-label">Featured In:</span>
+              <span className="media-label">Featured In & High-Profile Recognition:</span>
               <div className="media-items">
-                <span className="media-item"><Youtube size={14} /> YouTube Author Interviews</span>
-                <span className="media-item"><Globe size={14} /> Regional Literary Festivals</span>
-                <span className="media-item"><Users size={14} /> Social Advocacy Platforms</span>
+                <span className="media-item"><Youtube size={14} /> 'Spark Igniting Minds' YouTube Interview Series — featuring interviews with great personalities from Karnataka and India, with tremendous reach and engagement</span>
+                <span className="media-item"><Globe size={14} /> Book Launches by revered personalities including Sri Sri Ravi Shankar, Dr. Kiran Bedi, and Priya Dutt</span>
+                <span className="media-item"><Users size={14} /> Regional Literary Festivals</span>
+                <span className="media-item">Public Service Engagement — Brief involvement with the Aam Aadmi Party reflecting commitment to social change</span>
               </div>
             </div>
           </div>
