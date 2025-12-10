@@ -1,10 +1,11 @@
 /* --- Ultra-Modern Light Theme for Retreat Contact Section --- */
 
 .retreat-contact {
-  background-color: var(--bg-secondary);
-  color: var(--text-primary);
+  /* Lock background to a light color */
+  background-color: #f8fafc !important; /* Replaced var(--bg-secondary) */
+  color: #1e293b !important; /* Locked dark primary text color */
   padding: 6rem 1.5rem;
-  font-family: var(--font-body);
+  font-family: 'Arial', sans-serif; /* Placeholder for var(--font-body) */
   text-align: center;
 }
 
@@ -18,29 +19,31 @@
   margin-bottom: 4rem;
 }
 
-.contact-label {
+/* HIGH SPECIFICITY: Lock Label Colors */
+.retreat-contact .contact-label {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--color-error);
+  color: #dc2626 !important; /* Locked red/error color (Replaced var(--color-error)) */
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.75rem;
 }
 
-.contact-title {
+/* HIGH SPECIFICITY: Lock Title Colors */
+.retreat-contact .contact-title {
   font-size: 2.75rem;
   font-weight: 800;
-  color: var(--text-primary);
+  color: #1e293b !important; /* Locked dark primary color */
   margin-bottom: 1rem;
 }
 
-.contact-subtitle {
+.retreat-contact .contact-subtitle {
   font-size: 1.15rem;
-  color: var(--text-muted);
+  color: #64748b !important; /* Locked dark muted color (Replaced var(--text-muted)) */
   max-width: 600px;
   margin: 0 auto;
 }
@@ -53,59 +56,64 @@
   margin-bottom: 4rem;
 }
 
-.inspiration-card {
+/* HIGH SPECIFICITY: Lock Card Background and Border */
+.retreat-contact .inspiration-card {
   flex: 1;
   max-width: 400px;
   padding: 2rem;
-  background-color: var(--bg-card);
-  border-radius: var(--radius-md);
-  box-shadow: var(--card-shadow);
-  border: 1px solid var(--border-light);
+  background-color: #ffffff !important; /* Locked white background (Replaced var(--bg-card)) */
+  border-radius: 0.5rem; /* Placeholder for var(--radius-md) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Placeholder for var(--card-shadow) */
+  border: 1px solid #e2e8f0 !important; /* Locked light border (Replaced var(--border-light)) */
   position: relative;
   text-align: left;
 }
 
-.quote-icon {
-  color: var(--color-error);
+.retreat-contact .quote-icon {
+  color: #dc2626 !important; /* Locked red/error color */
   opacity: 0.2;
   position: absolute;
   top: 10px;
   left: 10px;
 }
 
-.inspiration-text {
+/* 🌟 FIX 1: Lock Quote Text to Dark */
+.retreat-contact .inspiration-text {
   font-style: italic;
   font-size: 1.05rem;
   line-height: 1.6;
-  color: var(--text-primary);
+  color: #1e293b !important; /* Locked dark primary color */
   padding: 1rem 0;
 }
 
-.inspiration-icon {
-  color: var(--color-error);
+.retreat-contact .inspiration-icon {
+  color: #dc2626 !important; /* Locked red/error color */
   float: right;
   margin-top: 0.5rem;
 }
 
 /* --- CTA Section --- */
-.cta-section {
+.retreat-contact .cta-section {
   padding: 2.5rem;
-  background-color: var(--bg-tertiary);
-  border-radius: var(--radius-md);
+  /* Lock CTA background to a distinct light color */
+  background-color: #e2e8f0 !important; /* Locked light color (Replaced var(--bg-tertiary)) */
+  border-radius: 0.5rem;
   margin-bottom: 4rem;
-  border: 1px solid var(--border-light);
+  border: 1px solid #cbd5e1 !important;
 }
 
-.cta-title {
+/* 🌟 FIX 2: Lock CTA Title to Dark */
+.retreat-contact .cta-title {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1e293b !important; /* Locked dark primary color */
   margin-bottom: 0.75rem;
 }
 
-.cta-description {
+/* 🌟 FIX 3: Lock CTA Description to Dark */
+.retreat-contact .cta-description {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: #64748b !important; /* Locked dark muted color */
 }
 
 /* --- Contact Options --- */
@@ -125,65 +133,73 @@
   max-width: 450px;
 }
 
-.contact-icon-wrapper {
-  background-color: var(--color-info);
-  color: var(--text-inverse);
+/* HIGH SPECIFICITY: Lock Icon Wrapper Colors */
+.retreat-contact .contact-icon-wrapper {
+  background-color: #3b82f6 !important; /* Locked blue info color (Replaced var(--color-info)) */
+  color: #ffffff !important; /* Locked white text */
   padding: 1rem;
-  border-radius: var(--radius-full);
+  border-radius: 9999px; /* Placeholder for var(--radius-full) */
   flex-shrink: 0;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3) !important; /* Placeholder for var(--shadow-md) */
 }
 
-.contact-method {
+/* 🌟 FIX 4: Lock Contact Method Title to Dark */
+.retreat-contact .contact-method {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1e293b !important; /* Locked dark primary color */
   margin-bottom: 0.25rem;
 }
 
-.contact-info {
+/* 🌟 FIX 5: Lock Contact Info to Dark */
+.retreat-contact .contact-info {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: #64748b !important; /* Locked dark muted color */
   margin-bottom: 0.5rem;
 }
 
-.contact-link {
+/* 🌟 FIX 6: Lock Contact Link to Blue */
+.retreat-contact .contact-link {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--color-info);
+  color: #3b82f6 !important; /* Locked blue info color */
   text-decoration: none;
   display: block;
   margin-bottom: 0.4rem;
-  transition: color var(--transition-fast);
+  transition: color 0.15s ease; /* Placeholder for var(--transition-fast) */
 }
 
-.contact-link:hover {
-  color: var(--text-primary);
+.retreat-contact .contact-link:hover {
+  color: #1e293b !important; /* Hover color should contrast with white background */
   text-decoration: underline;
 }
 
-.contact-hint {
+/* 🌟 FIX 7: Lock Contact Hint to Dark */
+.retreat-contact .contact-hint {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: #64748b !important; /* Locked dark muted color */
 }
 
 /* --- Final Message --- */
-.final-message {
-  border-top: 1px solid var(--border-light);
+.retreat-contact .final-message {
+  /* Lock light border */
+  border-top: 1px solid #e2e8f0 !important; 
   padding-top: 3rem;
 }
 
-.final-title {
+/* 🌟 FIX 8: Lock Final Title to Dark */
+.retreat-contact .final-title {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1e293b !important;
   margin-bottom: 1rem;
 }
 
-.final-text {
+/* 🌟 FIX 9: Lock Final Text to Dark */
+.retreat-contact .final-text {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: #64748b !important;
   max-width: 750px;
   margin: 0 auto 2rem;
 }
@@ -195,30 +211,31 @@
   gap: 0.75rem;
 }
 
-.tag {
-  background-color: var(--icon-bg);
-  color: var(--text-primary);
+/* 🌟 FIX 10: Lock Tag colors */
+.retreat-contact .tag {
+  background-color: #f3f4f6 !important; /* Locked light icon background */
+  color: #1e293b !important; /* Locked dark primary color */
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
-  border: 1px solid var(--border-light);
+  border: 1px solid #e2e8f0 !important;
 }
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 900px) {
-  .inspirational-section,
-  .contact-section {
+  .retreat-contact .inspirational-section,
+  .retreat-contact .contact-section {
     flex-direction: column;
     gap: 2rem;
   }
   
-  .inspiration-card,
-  .contact-card {
+  .retreat-contact .inspiration-card,
+  .retreat-contact .contact-card {
     max-width: 100%;
   }
 
-  .contact-section {
+  .retreat-contact .contact-section {
     align-items: center;
   }
 }
@@ -228,11 +245,71 @@
         padding: 4rem 1rem;
     }
 
-    .contact-title {
+    .retreat-contact .contact-title {
         font-size: 2rem;
     }
     
-    .final-title {
+    .retreat-contact .final-title {
         font-size: 1.5rem;
+    }
+}
+
+/* 🌙 Dark mode support: Highly Specific Overrides */
+/* Only switch to dark backgrounds and light text here */
+@media (prefers-color-scheme: dark) {
+    .retreat-contact {
+        background-color: #0f172a !important; 
+    }
+    
+    .retreat-contact .contact-title,
+    .retreat-contact .cta-title,
+    .retreat-contact .final-title,
+    .retreat-contact .contact-method {
+        color: #f1f5f9 !important;
+    }
+
+    .retreat-contact .contact-subtitle,
+    .retreat-contact .cta-description,
+    .retreat-contact .final-text,
+    .retreat-contact .contact-info,
+    .retreat-contact .contact-hint,
+    .retreat-contact .tag {
+        color: #e2e8f0 !important;
+    }
+
+    .retreat-contact .inspiration-card {
+        background-color: #1e293b !important;
+        border: 1px solid #334155 !important;
+    }
+    
+    .retreat-contact .inspiration-text {
+        color: #f1f5f9 !important;
+    }
+
+    .retreat-contact .cta-section {
+        background-color: #1e293b !important;
+        border: 1px solid #334155 !important;
+    }
+    
+    .retreat-contact .contact-icon-wrapper {
+        background-color: #93c5fd !important; /* Lighter blue for dark mode */
+        color: #1e293b !important; /* Dark text on bright icon */
+    }
+    
+    .retreat-contact .contact-link {
+        color: #93c5fd !important;
+    }
+    
+    .retreat-contact .contact-link:hover {
+        color: #f1f5f9 !important;
+    }
+
+    .retreat-contact .final-message {
+        border-top: 1px solid #334155 !important;
+    }
+    
+    .retreat-contact .tag {
+        background-color: #334155 !important;
+        border: 1px solid #475569 !important;
     }
 }

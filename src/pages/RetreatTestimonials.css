@@ -1,7 +1,8 @@
 /* Testimonials Section Styles */
 .retreat-testimonials {
   padding: 5rem 0;
-  background: var(--bg-secondary);
+  /* Lock background to a light color (light gray/off-white) */
+  background: #f8fafc !important; /* Replaced var(--bg-secondary) */
 }
 
 .retreat-testimonials-inner {
@@ -17,8 +18,9 @@
 
 .testimonials-label {
   display: inline-block;
-  background: var(--gradient-secondary);
-  color: var(--text-inverse);
+  /* Hardcoded gradient and colors for the label */
+  background: linear-gradient(135deg, #facc15, #d97706); /* Placeholder for var(--gradient-secondary) */
+  color: #ffffff !important; /* Locked white text */
   padding: 0.4rem 1rem;
   border-radius: 50px;
   font-size: 0.85rem;
@@ -28,17 +30,18 @@
   margin-bottom: 1rem;
 }
 
-.testimonials-title {
-  font-family: var(--font-heading);
+/* HIGH SPECIFICITY: Lock Header Text Colors to Dark */
+.retreat-testimonials .testimonials-title {
+  font-family: 'Arial', sans-serif; /* Placeholder for var(--font-heading) */
   font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1e293b !important; /* Locked dark primary text color */
   margin-bottom: 0.75rem;
 }
 
-.testimonials-subtitle {
+.retreat-testimonials .testimonials-subtitle {
   font-size: 1.1rem;
-  color: var(--text-secondary);
+  color: #475569 !important; /* Locked dark secondary text color */
   max-width: 600px;
   margin: 0 auto;
 }
@@ -50,8 +53,9 @@
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
-  background: var(--bg-hero);
-  border-radius: var(--radius-lg);
+  /* Hardcoded light stats bar background (e.g., a light blue) */
+  background: #3b82f6 !important; /* Placeholder for var(--bg-hero) */
+  border-radius: 0.75rem; /* Placeholder for var(--radius-lg) */
   margin-bottom: 3rem;
 }
 
@@ -65,22 +69,23 @@
 }
 
 .stat-icon {
-  color: var(--color-accent);
+  color: #fcd34d !important; /* Locked accent color (Yellow) */
   opacity: 0.8;
 }
 
 .stat-number {
   display: block;
-  font-family: var(--font-heading);
+  font-family: 'Arial', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-accent);
+  color: #fcd34d !important; /* Locked accent color (Yellow) */
   line-height: 1.2;
 }
 
 .stat-label {
+  /* Text on dark background should be light */
+  color: rgba(255, 255, 255, 0.9) !important;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Testimonial Cards */
@@ -91,32 +96,34 @@
   margin-bottom: 2.5rem;
 }
 
-.testimonial-card {
-  background: var(--bg-card);
-  border-radius: var(--radius-lg);
+/* HIGH SPECIFICITY: Lock card background to white and border color */
+.retreat-testimonials .testimonial-card {
+  background: #ffffff !important; /* Locked white card background (Replaced var(--bg-card)) */
+  border-radius: 0.75rem; /* Placeholder for var(--radius-lg) */
   padding: 2rem;
-  box-shadow: var(--card-shadow);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Placeholder for var(--card-shadow) */
   position: relative;
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Placeholder for var(--transition-normal) */
 }
 
-.testimonial-card:hover {
+.retreat-testimonials .testimonial-card:hover {
   transform: translateY(-5px);
-  box-shadow: var(--card-shadow-hover);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.08); /* Placeholder for var(--card-shadow-hover) */
 }
 
 .testimonial-quote-icon {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
-  color: var(--color-accent);
+  color: #fcd34d !important; /* Locked accent color (Yellow) */
   opacity: 0.3;
 }
 
-.testimonial-text {
+/* 🌟 FIX 1: Lock Testimonial Text to Dark */
+.retreat-testimonials .testimonial-text {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--text-secondary);
+  color: #475569 !important; /* Locked dark secondary text color */
   margin-bottom: 1.5rem;
   position: relative;
   z-index: 1;
@@ -126,7 +133,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  border-top: 1px solid var(--border-light);
+  /* Hardcoded light border */
+  border-top: 1px solid #e2e8f0 !important; /* Placeholder for var(--border-light) */
   padding-top: 1.5rem;
 }
 
@@ -137,9 +145,9 @@
 .avatar-placeholder {
   width: 50px;
   height: 50px;
-  border-radius: var(--radius-full);
-  background: var(--bg-hero);
-  color: var(--color-accent);
+  border-radius: 9999px; /* Placeholder for var(--radius-full) */
+  background: #e2e8f0 !important; /* Placeholder for var(--bg-hero) - used lighter here for contrast */
+  color: #3b82f6 !important; /* Locked accent color */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,38 +159,42 @@
   flex: 1;
 }
 
-.author-name {
+/* 🌟 FIX 2: Lock Author Name to Dark */
+.retreat-testimonials .author-name {
   font-weight: 700;
-  color: var(--text-primary);
+  color: #1e293b !important; /* Locked dark primary text color */
   margin: 0 0 0.2rem 0;
   font-size: 1rem;
 }
 
-.author-details {
+/* 🌟 FIX 3: Lock Author Details to Dark */
+.retreat-testimonials .author-details {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: #475569 !important; /* Locked dark secondary text color */
   margin: 0 0 0.2rem 0;
 }
 
-.author-book {
+/* 🌟 FIX 4: Lock Author Book Title to Dark Accent */
+.retreat-testimonials .author-book {
   font-size: 0.8rem;
-  color: var(--color-secondary);
+  color: #facc15 !important; /* Locked accent color */
   font-weight: 500;
   margin: 0;
 }
 
 /* Trust Builder */
 .testimonials-trust {
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: var(--radius-md);
+  background: rgba(59, 130, 246, 0.1) !important;
+  border: 1px solid rgba(59, 130, 246, 0.2) !important;
+  border-radius: 0.5rem; /* Placeholder for var(--radius-md) */
   padding: 1.2rem 1.5rem;
   margin-bottom: 2rem;
 }
 
-.trust-text {
+/* 🌟 FIX 5: Lock Trust Text to Dark Blue */
+.retreat-testimonials .trust-text {
   font-size: 0.9rem;
-  color: var(--color-info);
+  color: #2563eb !important; /* Locked dark info color */
   margin: 0;
   text-align: center;
 }
@@ -192,28 +204,30 @@
   text-align: center;
 }
 
-.testimonials-cta p {
+/* 🌟 FIX 6: Lock CTA Paragraph to Dark */
+.retreat-testimonials .testimonials-cta p {
   font-size: 1.1rem;
-  color: var(--text-secondary);
+  color: #475569 !important; /* Locked dark secondary text color */
   margin-bottom: 1rem;
 }
 
 .testimonials-cta-btn {
   display: inline-block;
-  background: var(--gradient-accent);
-  color: var(--text-primary);
+  /* Hardcoded gradient for CTA button */
+  background: linear-gradient(90deg, #3b82f6, #6366f1); /* Placeholder for var(--gradient-accent) */
+  color: #ffffff !important; /* Locked white text on button */
   padding: 1rem 2.5rem;
-  border-radius: var(--radius-full);
+  border-radius: 9999px; /* Placeholder for var(--radius-full) */
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
-  transition: all var(--transition-normal);
-  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Placeholder for var(--shadow-lg) */
 }
 
 .testimonials-cta-btn:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.08); /* Placeholder for var(--shadow-xl) */
 }
 
 /* Responsive */
@@ -246,33 +260,61 @@
   }
 }
 
-/* Dark mode support */
-/* Enforce always-visible colors for all text and backgrounds */
-.retreat-testimonials {
-  background: #f8fafc !important;
-}
-.testimonials-title {
-  color: #1e293b !important;
-}
-.testimonials-subtitle {
-  color: #475569 !important;
-}
-.testimonial-card {
-  background: #ffffff !important;
-  border-color: #e5e7eb !important;
-}
-.testimonial-text {
-  color: #475569 !important;
-}
-.author-name {
-  color: #1e293b !important;
-}
-.author-details {
-  color: #475569 !important;
-}
-.trust-text {
-  color: #2563eb !important;
-}
-.testimonials-cta p {
-  color: #475569 !important;
+/* 🌙 Dark mode support: Highly Specific Overrides */
+/* Only switch to dark backgrounds and light text here */
+@media (prefers-color-scheme: dark) {
+  
+  .retreat-testimonials {
+    background: #0f172a !important; 
+  }
+  
+  .retreat-testimonials .testimonials-title {
+    color: #f1f5f9 !important;
+  }
+  
+  .retreat-testimonials .testimonials-subtitle {
+    color: #e2e8f0 !important;
+  }
+  
+  .testimonials-stats {
+    background: #1e293b !important;
+  }
+  
+  .stat-label {
+    color: #cbd5e1 !important;
+  }
+  
+  .retreat-testimonials .testimonial-card {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+  }
+  
+  /* BRUTE FORCE: Ensure all text elements are light */
+  .retreat-testimonials .testimonial-text {
+    color: #e2e8f0 !important;
+  }
+  
+  .retreat-testimonials .author-name {
+    color: #f1f5f9 !important;
+  }
+  
+  .retreat-testimonials .author-details {
+    color: #cbd5e1 !important;
+  }
+  
+  .retreat-testimonials .author-book {
+    color: #fcd34d !important;
+  }
+  
+  .retreat-testimonials .trust-text {
+    color: #93c5fd !important; /* Lighter blue for dark mode */
+  }
+  
+  .retreat-testimonials .testimonials-cta p {
+    color: #e2e8f0 !important;
+  }
+  
+  .testimonial-footer {
+    border-top: 1px solid #334155 !important;
+  }
 }

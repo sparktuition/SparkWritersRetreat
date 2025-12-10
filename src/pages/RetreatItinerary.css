@@ -342,10 +342,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-  color: #a855f7;
+  color: #ffffff;
 }
 
 .takeaway-number {
+  color: #ffffff !important; /* Fallback solid color for visibility */
   font-size: 3rem;
   font-weight: 800;
   background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
