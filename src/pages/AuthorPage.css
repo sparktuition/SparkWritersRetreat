@@ -2,7 +2,7 @@
 .author-page {
   padding: 5rem 0;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  color: #fff;
+  color: #ffffff;
 }
 
 .author-page-inner {
@@ -19,7 +19,7 @@
 .author-label {
   display: inline-block;
   background: linear-gradient(90deg, #8b5cf6, #a78bfa);
-  color: #fff;
+  color: #ffffff;
   padding: 0.4rem 1rem;
   border-radius: 50px;
   font-size: 0.85rem;
@@ -35,15 +35,12 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #fff;
-  background: linear-gradient(90deg, #f0abfc, #a78bfa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+
 }
 
 .author-subtitle {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255, 255, 255);
 }
 
 .author-content {
@@ -93,7 +90,7 @@
 .bio-highlight {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255);
   background: rgba(139, 92, 246, 0.1);
   padding: 1.5rem;
   border-radius: 12px;
@@ -105,7 +102,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   margin: 2rem 0 1rem;
-  color: #f0abfc;
+  color: #00e1ff;
 }
 
 .credentials-grid {
@@ -561,7 +558,7 @@
 
 .media-label {
   font-weight: 600;
-  color: #34d399;
+  color: #00ffa2;
   font-size: 0.9rem;
 }
 
@@ -588,18 +585,18 @@
 
 /* Sangeeta Bahadur specific color overrides */
 #author-sangeeta .author-label {
-  background: linear-gradient(90deg, #10b981, #34d399);
+  background: linear-gradient(90deg, #003d29, #005536);
 }
 
 #author-sangeeta .author-title {
-  background: linear-gradient(90deg, #34d399, #10b981);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 #author-sangeeta .author-badge {
-  background: linear-gradient(135deg, #10b981, #059669);
+  background: linear-gradient(135deg, #003a27, #005037);
 }
 
 #author-sangeeta .bio-highlight {
@@ -614,20 +611,20 @@
 
 #author-sangeeta .credential-icon-wrapper {
   background: rgba(16, 185, 129, 0.2);
-  color: #34d399;
+  color: #ffffff;
 }
 
 #author-sangeeta .credential-content h4 {
-  color: #34d399;
+  color: #ffffff;
 }
 
 #author-sangeeta .author-mission {
   background: rgba(16, 185, 129, 0.15);
-  border-left-color: #10b981;
+  border-left-color: #ffffff;
 }
 
 #author-sangeeta .author-mission cite {
-  color: #34d399;
+  color: #ffffff;
 }
 
 /* Responsive adjustments */
