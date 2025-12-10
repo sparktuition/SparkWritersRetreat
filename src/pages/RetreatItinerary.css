@@ -346,13 +346,10 @@
 }
 
 .takeaway-number {
-  color: #ffffff !important; /* Fallback solid color for visibility */
+  color: #ffffff !important; /* Ensure solid color visibility */
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--purple) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none; /* Remove gradient for clarity */
   margin-bottom: 1rem;
   line-height: 1;
 }
