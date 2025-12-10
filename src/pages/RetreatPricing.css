@@ -1,8 +1,8 @@
 /* Pricing Section Styles */
 .retreat-pricing {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-  color: #fff;
+  background: var(--bg-hero);
+  color: var(--text-inverse);
 }
 
 .retreat-pricing-inner {
@@ -18,10 +18,10 @@
 
 .pricing-label {
   display: inline-block;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
-  color: #1a1a1a;
+  background: var(--gradient-accent);
+  color: var(--text-inverse);
   padding: 0.4rem 1rem;
-  border-radius: 50px;
+  border-radius: var(--radius-full);
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -30,10 +30,11 @@
 }
 
 .pricing-title {
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 700;
   margin-bottom: 0.75rem;
+  color: var(--text-inverse);
 }
 
 .pricing-subtitle {
@@ -51,7 +52,7 @@
 
 /* Pricing Card */
 .pricing-card {
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 20px;
   padding: 2.5rem 2rem;
   text-align: center;
@@ -64,8 +65,8 @@
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #10b981, #059669);
-  color: #fff;
+  background: var(--gradient-secondary);
+  color: var(--text-inverse);
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
   font-size: 0.85rem;
@@ -79,7 +80,7 @@
 
 .original-price {
   font-size: 1.2rem;
-  color: #999;
+  color: var(--text-muted);
   text-decoration: line-through;
 }
 
@@ -87,7 +88,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  color: #1a1a2e;
+  color: var(--text-primary);
 }
 
 .currency {
@@ -106,12 +107,12 @@
 .price-note {
   display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-muted);
   margin-top: 0.5rem;
 }
 
 .savings-callout {
-  background: #fef3c7;
+  background: rgba(255, 215, 0, 0.15);
   border-radius: 8px;
   padding: 0.75rem;
   margin-bottom: 1.5rem;
@@ -120,7 +121,7 @@
   justify-content: center;
   gap: 0.5rem;
   font-weight: 600;
-  color: #92400e;
+  color: var(--color-warning);
 }
 
 .savings-icon {
@@ -128,8 +129,8 @@
 }
 
 .pricing-details {
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
   padding: 1rem 0;
   margin-bottom: 1.5rem;
 }
@@ -141,25 +142,25 @@
 }
 
 .detail-label {
-  color: #666;
+  color: var(--text-muted);
   font-size: 0.95rem;
 }
 
 .detail-value {
   font-weight: 600;
-  color: #1a1a2e;
+  color: var(--text-primary);
   font-size: 0.95rem;
 }
 
 .seats-highlight {
-  color: #dc2626;
+  color: var(--color-error);
 }
 
 .pricing-cta-btn {
   display: inline-block;
   margin: 0 auto;
-  background: linear-gradient(135deg, #ffd700 0%, #f0c000 100%);
-  color: #1a1a1a;
+  background: var(--gradient-accent);
+  color: var(--text-primary);
   padding: 1rem 3rem;
   border-radius: 12px;
   font-weight: 700;
@@ -176,7 +177,7 @@
 
 .pricing-urgency {
   font-size: 0.9rem;
-  color: #dc2626;
+  color: var(--color-error);
   margin-top: 1rem;
   margin-bottom: 0;
 }
@@ -190,7 +191,7 @@
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: #ffd700;
+  color: var(--color-accent);
 }
 
 .inclusions-grid {
@@ -222,7 +223,7 @@
 .inclusion-icon {
   font-size: 1.3rem;
   flex-shrink: 0;
-  color: #ffd700;
+  color: var(--color-accent);
 }
 
 .inclusion-text {
@@ -272,7 +273,7 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
-  color: #ffd700;
+  color: var(--color-accent);
 }
 
 .payment-steps {
@@ -289,8 +290,8 @@
 .step-number {
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #ffd700, #f0c000);
-  color: #1a1a1a;
+  background: var(--gradient-accent);
+  color: var(--text-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -303,7 +304,7 @@
 .step-content h4 {
   font-size: 1rem;
   margin-bottom: 0.3rem;
-  color: #fff;
+  color: var(--text-inverse);
 }
 
 .step-content p {
@@ -314,7 +315,7 @@
 
 .payment-qr {
   text-align: center;
-  background: #fff;
+  background: var(--bg-card);
   border-radius: 16px;
   padding: 1.5rem;
   max-width: 250px;
@@ -323,7 +324,7 @@
 
 .qr-label {
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
@@ -336,7 +337,7 @@
 
 .qr-note {
   font-size: 0.85rem;
-  color: #666;
+  color: var(--text-muted);
   margin-top: 0.75rem;
   margin-bottom: 0;
 }
@@ -355,13 +356,13 @@
 .guarantee-icon {
   font-size: 2.5rem;
   flex-shrink: 0;
-  color: #10b981;
+  color: var(--color-secondary);
 }
 
 .guarantee-content h4 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #10b981;
+  color: var(--color-secondary);
   margin-bottom: 0.3rem;
 }
 

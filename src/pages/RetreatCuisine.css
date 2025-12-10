@@ -1,13 +1,13 @@
 /* Retreat Cuisine Section - Modern Light Theme */
 .retreat-cuisine-section {
   padding: 6rem 0;
-  background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
   position: relative;
   overflow: hidden;
 }
 
 .theme-rose {
-  background: linear-gradient(135deg, #ffffff 0%, #fff5f7 100%);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
 }
 
 .parallax-bg {
@@ -49,10 +49,10 @@
 }
 
 .retreat-cuisine-title {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-body);
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 800;
-  color: #ffffff;
+  color: #1e293b !important;
   text-align: center;
   margin-bottom: 2.5rem;
   letter-spacing: -0.02em;
@@ -64,7 +64,7 @@
   display: block;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+  background: linear-gradient(90deg, var(--color-error), var(--color-warning));
   margin: 1.5rem auto;
   border-radius: 2px;
 }
@@ -93,7 +93,7 @@
 .retreat-cuisine-content p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #f7f7f7;
+  color: #1e293b !important;
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 400;
@@ -102,7 +102,7 @@
 
 .retreat-cuisine-content p:first-of-type {
   font-size: 1.3rem;
-  color: #ffffff;
+  color: #1e293b !important;
   font-weight: 500;
 }
 
@@ -121,11 +121,11 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 20px;
+  background: var(--bg-glass);
+  border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--card-shadow);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -138,15 +138,15 @@
   left: 0;
   right: 0;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.05), rgba(255, 142, 83, 0.05));
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(245, 158, 11, 0.05));
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .cuisine-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  border-color: rgba(255, 107, 107, 0.2);
+  box-shadow: var(--card-shadow-hover);
+  border-color: rgba(239, 68, 68, 0.2);
 }
 
 .cuisine-item:hover::before {
@@ -154,20 +154,20 @@
 }
 
 .cuisine-icon {
-  color: #ff6b6b;
+  color: var(--color-error);
   flex-shrink: 0;
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal);
 }
 
 .cuisine-item:hover .cuisine-icon {
   transform: scale(1.1);
-  color: #ff8e53;
+  color: var(--color-warning);
 }
 
 .cuisine-item span {
   font-size: 1.05rem;
   font-weight: 600;
-  color: #2d3748;
+  color: var(--text-primary);
   letter-spacing: -0.01em;
 }
 
@@ -175,7 +175,7 @@
 .retreat-cuisine-section .floating-element {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 142, 83, 0.1));
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1));
   filter: blur(20px);
   z-index: 1;
 }
@@ -274,3 +274,44 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .retreat-cuisine-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+  
+  .retreat-cuisine-section::before,
+  .retreat-cuisine-section::after {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, transparent 100%);
+  }
+  
+  .retreat-cuisine-title {
+    color: #f1f5f9 !important;
+  }
+  
+  .retreat-cuisine-content p {
+    color: #e2e8f0 !important;
+  }
+  
+  .cuisine-item {
+    background: #1e293b;
+    border-color: #334155;
+  }
+  
+  .cuisine-item h4 {
+    color: #f1f5f9;
+  }
+    .retreat-cuisine-content p {
+      color: #e2e8f0 !important;
+    }
+  
+    .cuisine-item {
+      background: #1e293b;
+      border-color: #334155;
+    }
+  
+    .cuisine-item h4 {
+      color: #f1f5f9;
+    }
+  }

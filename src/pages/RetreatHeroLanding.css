@@ -40,7 +40,7 @@
   max-width: min(92vw, 900px);
   margin: 0 auto;
   text-align: center;
-  color: #fff;
+  color: var(--text-inverse);
   padding: 2rem 18px;
 }
 
@@ -51,11 +51,11 @@
   gap: 0.6rem;
   background: rgba(255, 215, 0, 0.15);
   border: 1px solid rgba(255, 215, 0, 0.4);
-  border-radius: 50px;
+  border-radius: var(--radius-full);
   padding: 0.5rem 1.2rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #ffd700;
+  color: var(--color-accent);
   margin-bottom: 1.5rem;
   backdrop-filter: blur(8px);
 }
@@ -65,7 +65,7 @@
 }
 
 .retreat-hero-title {
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 5.5vw, 3.8rem);
   font-weight: 700;
   margin-bottom: 0.8rem;
@@ -76,14 +76,14 @@
 
 .hero-highlight-line {
   display: block;
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .retreat-hero-tagline {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
@@ -106,7 +106,7 @@
   gap: 0.5rem;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   padding: 0.6rem 1rem;
   font-size: 0.9rem;
   backdrop-filter: blur(4px);
@@ -117,7 +117,7 @@
 }
 
 .retreat-hero-desc {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: clamp(0.95rem, 2.2vw, 1.1rem);
   line-height: 1.7;
   margin-bottom: 2rem;
@@ -145,13 +145,13 @@
   padding: 1rem 1.5rem;
   font-size: clamp(1rem, 2vw, 1.15rem);
   font-weight: 700;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: none;
-  background: linear-gradient(135deg, #ffd700 0%, #f0c000 100%);
-  color: #1a1a1a;
+  background: var(--gradient-accent);
+  color: var(--text-inverse);
   box-shadow: 0 8px 30px rgba(255, 215, 0, 0.35);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal);
   text-decoration: none;
 }
 
@@ -173,18 +173,18 @@
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   border: 2px solid rgba(255, 255, 255, 0.5);
   background: transparent;
-  color: #fff;
+  color: var(--text-inverse);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition-normal);
   text-decoration: none;
 }
 
 .retreat-hero-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: #fff;
+  border-color: var(--text-inverse);
 }
 
 /* Trust line */

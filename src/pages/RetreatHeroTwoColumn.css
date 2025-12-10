@@ -3,7 +3,7 @@
 /* ===== BASE STYLES ===== */
 .retreat-hero.retreat-section {
   padding: 100px 20px;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -50,10 +50,10 @@
 
 /* ===== TITLE STYLING ===== */
 .retreat-title {
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-family: var(--font-heading);
   font-size: 3.5rem;
   font-weight: 600;
-  color: #1e293b;
+  color: var(--text-primary);
   line-height: 1.2;
   margin-bottom: 2rem;
   position: relative;
@@ -66,16 +66,16 @@
   left: 0;
   width: 80px;
   height: 4px;
-  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  background: linear-gradient(to right, var(--color-info), var(--color-primary));
   border-radius: 2px;
 }
 
 /* ===== PARAGRAPH STYLING ===== */
 .retreat-paragraph {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-body);
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #4a5568;
+  color: var(--text-secondary);
   margin-bottom: 1.8rem;
 }
 
@@ -85,7 +85,7 @@
 
 /* Strong text styling */
 .retreat-paragraph strong {
-  color: #3b82f6;
+  color: var(--color-info);
   font-weight: 600;
   position: relative;
   padding: 0 2px;
@@ -97,7 +97,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  background: linear-gradient(to right, var(--color-info), var(--color-primary));
   opacity: 0.3;
 }
 
@@ -339,11 +339,11 @@
   }
   
   .retreat-title {
-    color: #ffffff;
+    color: #ffffff !important;
   }
   
   .retreat-paragraph {
-    color: #cbd5e0;
+    color: #cbd5e0 !important;
   }
   
   .retreat-paragraph strong {
@@ -366,7 +366,7 @@
   .retreat-hero::after {
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
   }
-}
+  }
 
 /* ===== PREFERS REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
@@ -383,5 +383,24 @@
   
   .retreat-image:hover img {
     transform: none;
+  }
+}
+
+/* ===== LIGHT MODE EXPLICIT COLORS ===== */
+.retreat-title {
+  color: #1e293b !important;
+}
+
+.retreat-paragraph {
+  color: #475569 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .retreat-title {
+    color: #ffffff !important;
+  }
+  
+  .retreat-paragraph {
+    color: #e2e8f0 !important;
   }
 }

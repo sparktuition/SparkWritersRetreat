@@ -1,7 +1,7 @@
 /* Retreat Stay Section Styles */
 .retreat-stay-section {
   padding: 5rem 0;
-  background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
   position: relative;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .theme-sand {
-  background: linear-gradient(180deg, #fdf6e3 0%, #fff8e1 100%);
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
 }
 
 .retreat-stay-inner {
@@ -23,10 +23,10 @@
 }
 
 .retreat-stay-title {
-  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-family: var(--font-heading);
   font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 700;
-  color: #ffffff;
+  color: #1e293b !important;
   text-align: center;
   margin-bottom: 1.5rem;
   position: relative;
@@ -41,7 +41,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background: linear-gradient(90deg, #ffd700, #f59e0b);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark));
   border-radius: 2px;
 }
 
@@ -70,7 +70,7 @@
 .retreat-stay-content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #ebebeb;
+  color: #1e293b !important;
   text-align: center;
   margin-bottom: 1.5rem;
   position: relative;
@@ -82,7 +82,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #f59e0b;
+  color: var(--color-warning);
   font-size: 1.2rem;
 }
 
@@ -91,7 +91,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  color: #f59e0b;
+  color: var(--color-warning);
   font-size: 1.2rem;
 }
 
@@ -103,7 +103,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #ffd700, #f59e0b, #ffd700);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark), var(--color-accent));
   opacity: 0.8;
 }
 
@@ -114,7 +114,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #ffd700, #f59e0b, #ffd700);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-dark), var(--color-accent));
   opacity: 0.8;
 }
 
@@ -159,4 +159,8 @@
 [data-aos="fade-up"].aos-animate {
   transform: translateY(0);
   opacity: 1;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
 }

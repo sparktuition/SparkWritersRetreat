@@ -3,9 +3,9 @@
 /* --- Core Section Styles --- */
 .retreat-why {
     /* Subtle background inspired by nature/paper */
-    background-color: #fcfcfc;
+    background-color: var(--bg-secondary);
     padding: 80px 20px;
-    font-family: 'Poppins', sans-serif; /* A modern, professional font (assumes import) */
+    font-family: var(--font-body);
 }
 
 .retreat-inner {
@@ -19,15 +19,16 @@
 .why-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2c3e50; /* Dark, professional primary color */
+    color: var(--text-primary);
     margin-bottom: 15px;
     letter-spacing: -0.5px;
+    font-family: var(--font-heading);
 }
 
 .why-subtitle {
     font-size: 1.15rem;
     font-weight: 400;
-    color: #7f8c8d; /* Muted secondary color */
+    color: var(--text-muted);
     max-width: 700px;
     margin: 0 auto 60px auto;
     line-height: 1.6;
@@ -46,19 +47,19 @@
 /* --- Individual Feature Card --- */
 
 .feature-card {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
     padding: 30px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
     /* Optional: Subtle inset shadow for depth */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-sm);
 }
 
 .feature-card:hover {
     transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 0 3px #3498db33; /* Stronger shadow + subtle blue outline */
+    box-shadow: var(--card-shadow-hover), 0 0 0 3px rgba(139, 92, 246, 0.2); /* Stronger shadow + subtle primary outline */
 }
 
 /* --- Feature Icon --- */
@@ -69,16 +70,16 @@
     align-items: center;
     width: 64px;
     height: 64px;
-    background-color: #ecf0f1; /* Light gray background */
-    border-radius: 50%;
+    background-color: var(--icon-bg);
+    border-radius: var(--radius-full);
     margin: 0 auto 20px auto;
-    color: #3498db; /* Primary accent color (Sky Blue/Himalayan Blue) */
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--color-primary);
+    transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 .feature-card:hover .feature-icon {
-    background-color: #3498db;
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--text-inverse);
 }
 
 /* --- Feature Card Typography --- */
@@ -86,13 +87,13 @@
 .feature-title {
     font-size: 1.35rem;
     font-weight: 600;
-    color: #34495e; /* Darker title text */
+    color: var(--text-primary);
     margin-bottom: 10px;
 }
 
 .feature-description {
     font-size: 0.95rem;
-    color: #7f8c8d;
+    color: var(--text-secondary);
     line-height: 1.5;
 }
 
@@ -125,3 +126,17 @@
 
 /* You may need to ensure a font like 'Poppins' is imported in your main CSS or HTML file for this to look correct. */
 /* Example: @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
+
+/* Enforce always-visible colors for all text and backgrounds */
+.why-title {
+    color: #1e293b !important;
+}
+.why-subtitle {
+    color: #475569 !important;
+}
+.feature-title {
+    color: #1e293b !important;
+}
+.feature-description {
+    color: #475569 !important;
+}

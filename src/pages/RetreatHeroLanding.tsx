@@ -26,7 +26,7 @@ const RetreatHeroLanding: React.FC = () => {
             <span>4 Acclaimed Authors as Your Personal Mentors</span>
           </div>
         <div className="usp-item">
-            <span>Luxury Villa Stay Amid Himalayan Serenity</span>
+            <span>Luxury Resort Stay Amid Himalayan Serenity</span>
           </div>
        
           <div className="usp-item">
