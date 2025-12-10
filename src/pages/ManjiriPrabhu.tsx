@@ -6,6 +6,9 @@ const AuthorPage: React.FC = () => {
     <section className="author-page retreat-section" id="author">
       <div className="author-page-inner retreat-inner">
         <div className="author-header">
+          <div className="author-section">
+              <h1>Who Are Your Athors?</h1>
+            </div>
           <span className="author-label">Renowned Indian Author</span>
           <h1 className="author-title">Dr. Manjiri Prabhu</h1>
           <p className="author-subtitle">The 'Desi Agatha Christie' & Pioneer of Indian Mystery Fiction</p>
@@ -165,7 +168,9 @@ const AuthorPage: React.FC = () => {
               </div>
             </div>
 
-            
+            <div className="author-section">
+              <h2>Who are your authors...</h2>
+            </div>
           </div>
         </div>
       </div>
