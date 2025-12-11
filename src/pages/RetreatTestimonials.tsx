@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, BookOpen, Star, Award, Quote, Sparkles, ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
+import { Award, Quote, Sparkles, ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 import './RetreatTestimonials.css';
 
 // Testimonial Data Array
@@ -40,12 +40,6 @@ Long live Spark in all of us!!!`,
   },
 ];
 
-const stats = [
-  { number: '150+', label: 'Writers Mentored', icon: Users, color: '#8B5CF6' },
-  { number: '45+', label: 'Books Published', icon: BookOpen, color: '#10B981' },
-  { number: '4.9/5', label: 'Average Rating', icon: Star, color: '#F59E0B' },
-  { number: '12', label: 'Retreats Conducted', icon: Award, color: '#EF4444' },
-];
 
 const RetreatTestimonials: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -152,23 +146,7 @@ const RetreatTestimonials: React.FC = () => {
 
           {/* Right Column - Stats & Other Testimonials */}
           <div className="testimonials-sidebar">
-            {/* Stats Cards */}
-            <div className="stats-grid">
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <div key={index} className="stat-card" style={{ '--stat-color': stat.color } as React.CSSProperties}>
-                    <div className="stat-icon-wrapper">
-                      <Icon size={20} />
-                    </div>
-                    <div className="stat-content">
-                      <h3 className="stat-number">{stat.number}</h3>
-                      <p className="stat-label">{stat.label}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+           
 
            
 

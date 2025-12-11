@@ -1,0 +1,277 @@
+/* Spark Presentation Section */
+.spark-presentation-main {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+  overflow: hidden;
+}
+
+.spark-presentation-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 105, 180, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(255, 105, 180, 0.05) 0%, transparent 50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.spark-presentation-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: min(92vw, 900px);
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  padding: 3rem 18px;
+}
+
+/* Logo Container */
+.spark-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.spark-logo {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 0 40px rgba(255, 105, 180, 0.5));
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.spark-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.spark-icon {
+  width: 100%;
+  height: 100%;
+  animation: sparkPulse 3s ease-in-out infinite;
+}
+
+.spark-tagline-small {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #FF69B4;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Header Section */
+.spark-presentation-header {
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.spark-presenter {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+  font-weight: 500;
+  color: #FF69B4;
+  margin: 0 0 0.8rem 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.spark-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  text-shadow: 0 4px 20px rgba(255, 105, 180, 0.3);
+}
+
+.spark-year {
+  display: block;
+  color: #FFD700;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  margin-top: 0.3rem;
+}
+
+/* Subtitle */
+.spark-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 400;
+  color: #d0d0d0;
+  margin: 1.5rem 0 2.5rem 0;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+/* Benefits Section */
+.spark-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.2rem;
+  margin: 2.5rem 0 2.5rem 0;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem 1rem;
+  background: rgba(255, 105, 180, 0.05);
+  border: 1px solid rgba(255, 105, 180, 0.2);
+  border-radius: var(--radius-lg, 12px);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: rgba(255, 105, 180, 0.1);
+  border-color: rgba(255, 105, 180, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(255, 105, 180, 0.25);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.benefit-card p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* CTA Button */
+.spark-cta {
+  margin-top: 2rem;
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+.spark-btn {
+  display: inline-block;
+  padding: 0.95rem 2.5rem;
+  background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: var(--radius-full, 50px);
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+  text-transform: uppercase;
+}
+
+.spark-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(255, 105, 180, 0.5);
+  background: linear-gradient(135deg, #FF1493 0%, #C71585 100%);
+}
+
+.spark-btn:active {
+  transform: translateY(-1px);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sparkPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(255, 105, 180, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 30px rgba(255, 105, 180, 0.5));
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .spark-presentation-main {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .spark-presentation-content {
+    padding: 2rem 16px;
+  }
+
+  .spark-logo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .spark-benefits {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .benefit-card {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .spark-btn {
+    padding: 0.85rem 2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .spark-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .spark-tagline-small {
+    font-size: 0.85rem;
+  }
+
+  .spark-presenter {
+    font-size: 0.9rem;
+  }
+}

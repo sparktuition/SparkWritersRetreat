@@ -7,7 +7,7 @@ const AuthorPage: React.FC = () => {
       <div className="author-page-inner retreat-inner">
         <div className="author-header">
           <div className="author-section">
-              <h1>Who Are Your Athors?</h1>
+              <h1>Meet Your Mentors!</h1>
             </div>
           <span className="author-label">Renowned Indian Author</span>
           <h1 className="author-title">Dr. Manjiri Prabhu</h1>

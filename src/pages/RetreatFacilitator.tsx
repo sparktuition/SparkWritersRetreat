@@ -38,8 +38,8 @@ const RetreatFacilitator: React.FC = () => {
                   <BookOpen size={24} />
                 </div>
                 <div className="credential-content">
-                  <h4>18 Published Books</h4>
-                  <p>Fiction, non-fiction, anthologies, children's literature, and award-winning language-learning books. Her debut novel, <em>Anand</em>, was inspired by the life of Café Coffee Day founder Siddhartha Hegde and is well-received by the Indian audience. <em>Are You Smart with Words</em> has become a favourite among schoolchildren for language learning.</p>
+                  <h4>3 Published Books as Author</h4>
+                  <p>Her acclaimed works include her debut novel, <em>Anand</em>, inspired by the life of Café Coffee Day founder Siddhartha Hegde and well-received by the Indian audience. <em>Are You Smart with Words</em> has become a favourite among schoolchildren for language learning.</p>
                 </div>
               </div>
 
@@ -48,8 +48,8 @@ const RetreatFacilitator: React.FC = () => {
                   <Building2 size={24} />
                 </div>
                 <div className="credential-content">
-                  <h4>Founder, Spark Igniting Minds</h4>
-                  <p>India's all-inclusive writers' guild and publishing initiative, amplifying regional voices nationwide</p>
+                  <h4>Founder, Spark Ingniting Minds</h4>
+                  <p>Through Spark Igniting Minds, has published 25 books across fiction, non-fiction, anthologies, children's literature, and award-winning language-learning books, amplifying regional voices nationwide</p>
                 </div>
               </div>
 

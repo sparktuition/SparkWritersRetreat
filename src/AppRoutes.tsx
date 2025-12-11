@@ -4,6 +4,7 @@ import SunilShelar from './pages/SunilShelar';
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import RetreatHeroLanding from './pages/RetreatHeroLanding';
+import SparkPresentation from './pages/SparkPresentation';
 import RetreatHeroTwoColumn from './pages/RetreatHeroTwoColumn';
 import RetreatItinerary from './pages/RetreatItinerary';
 import RetreatDaily from './pages/RetreatDaily';
@@ -31,6 +32,7 @@ const AppRoutes: React.FC = () => (
       <Route path="/sunil-shelar" element={<SunilShelar />} />
       <Route path="/" element={<RetreatPage />} />
       <Route path="/welcome" element={<RetreatHeroLanding />} />
+      <Route path="/spark-presentation" element={<SparkPresentation />} />
       <Route path="/overview" element={<RetreatHeroTwoColumn />} />
       <Route path="/itinerary" element={<RetreatItinerary />} />
       <Route path="/daily" element={<RetreatDaily />} />

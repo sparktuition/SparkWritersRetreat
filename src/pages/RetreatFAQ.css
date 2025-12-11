@@ -92,30 +92,6 @@
   margin-top: 0.5rem;
 }
 
-/* --- CTA Section --- */
-.retreat-contact .cta-section {
-  padding: 2.5rem;
-  /* Lock CTA background to a distinct light color */
-  background-color: #e2e8f0 !important; /* Locked light color (Replaced var(--bg-tertiary)) */
-  border-radius: 0.5rem;
-  margin-bottom: 4rem;
-  border: 1px solid #cbd5e1 !important;
-}
-
-/* 🌟 FIX 2: Lock CTA Title to Dark */
-.retreat-contact .cta-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #1e293b !important; /* Locked dark primary color */
-  margin-bottom: 0.75rem;
-}
-
-/* 🌟 FIX 3: Lock CTA Description to Dark */
-.retreat-contact .cta-description {
-  font-size: 1rem;
-  color: #64748b !important; /* Locked dark muted color */
-}
-
 /* --- Contact Options --- */
 .contact-section {
   display: flex;
@@ -288,7 +264,16 @@
 
     .retreat-contact .cta-section {
         background-color: #1e293b !important;
-        border: 1px solid #334155 !important;
+        border: 2px solid #334155 !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    .retreat-contact .cta-title {
+        color: #f1f5f9 !important;
+    }
+    
+    .retreat-contact .cta-description {
+        color: #cbd5e1 !important;
     }
     
     .retreat-contact .contact-icon-wrapper {

@@ -37,13 +37,7 @@ const RetreatContact: React.FC = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="cta-section">
-          <h3 className="cta-title">Ready to Transform Your Writing Journey?</h3>
-          <p className="cta-description">
-            Join a community of passionate writers in the serene Himalayas. Your manuscript awaits.
-          </p>
-        </div>
+       
 
         {/* Contact Options */}
         <div className="contact-section">

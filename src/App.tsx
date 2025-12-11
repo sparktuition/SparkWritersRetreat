@@ -1,5 +1,6 @@
 import React from 'react'
 import RetreatHeroLanding from './pages/RetreatHeroLanding'
+import SparkPresentation from './pages/SparkPresentation'
 import RetreatHeroTwoColumn from './pages/RetreatHeroTwoColumn'
 import RetreatItinerary from './pages/RetreatItinerary'
 import RetreatDaily from './pages/RetreatDaily'
@@ -49,6 +50,10 @@ const RetreatPage: React.FC = () => {
         <RetreatHeroLanding />
       </div>
 
+      {/* 1.5. SPARK PRESENTATION - Brand Introduction */}
+      <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="50">
+        <SparkPresentation />
+      </div>
 
       {/* 2. WHO IS THIS FOR - Clear Positioning */}
       <div data-aos="fade-left" data-aos-duration="400" data-aos-delay="50">
