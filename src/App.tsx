@@ -32,13 +32,14 @@ import 'aos/dist/aos.css';
 
 const RetreatPage: React.FC = () => {
   React.useEffect(() => {
-    AOS.init({
-      duration: 600, // much faster
-      easing: 'ease-out-cubic',
-      offset: 60, // triggers earlier
-      once: false, // allow repeat
-      mirror: false // do NOT animate out on scroll up
-    });
+    // Temporarily disabled AOS
+    // AOS.init({
+    //   duration: 600, // much faster
+    //   easing: 'ease-out-cubic',
+    //   offset: 60, // triggers earlier
+    //   once: false, // allow repeat
+    //   mirror: false // do NOT animate out on scroll up
+    // });
   }, []);
   return (
     <div className="retreat-page-container">
