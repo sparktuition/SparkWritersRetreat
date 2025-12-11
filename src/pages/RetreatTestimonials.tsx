@@ -58,7 +58,7 @@ const RetreatTestimonials: React.FC = () => {
     if (!isPlaying) return;
     
     const interval = setInterval(() => {
-      nextTestimonial();
+      setActiveIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
     
     return () => clearInterval(interval);
