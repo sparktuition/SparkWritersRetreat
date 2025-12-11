@@ -27,7 +27,7 @@ import RetreatAudience from './pages/RetreatAudience';
 import RetreatPricing from './pages/RetreatPricing';
 import './pages/RetreatBase.css'
 import './pages/RetreatAnimations.css'
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 
 const RetreatPage: React.FC = () => {
