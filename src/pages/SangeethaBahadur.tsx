@@ -9,7 +9,7 @@ const SangeetaBahadurPage: React.FC = () => {
         <div className="author-header">
           <span className="author-label">Diplomat & Fantasy Author</span>
           <h1 className="author-title">Sangeeta Bahadur</h1>
-          <p className="author-subtitle">Indian Foreign Service Officer & Creator of The Kaal Trilogy</p>
+          <p className="author-subtitle">Indian Foreign Service Officer & Creator of The Kaal Tetralogy</p>
         </div>
 
         <div className="author-content">
@@ -39,26 +39,15 @@ const SangeetaBahadurPage: React.FC = () => {
                 Diplomatic Career (1987-2022)
               </h3>
               <div className="postings-grid">
-                <div className="posting-card">
-                  <div className="posting-flag">🇮🇳</div>
-                  <h4>Ambassador to Belarus</h4>
-                  <p>Led diplomatic missions and bilateral relations</p>
-                </div>
-                <div className="posting-card">
-                  <div className="posting-flag">🇬🇧</div>
-                  <h4>Director, Nehru Centre</h4>
-                  <p>India's flagship cultural centre in London (4 years)</p>
-                </div>
-                <div className="posting-card">
-                  <div className="posting-flag">🇲🇹</div>
-                  <h4>High Commissioner to Malta</h4>
-                  <p>Final diplomatic posting before retirement</p>
-                </div>
-                <div className="posting-card">
-                  <div className="posting-flag">🇮🇳</div>
-                  <h4>Deputy Director General</h4>
-                  <p>Indian Council for Cultural Relations (ICCR)</p>
-                </div>
+                                <div className="posting-card"><div className="posting-flag">🌍</div><h4>Other Postings</h4><p>Served in 4 additional countries at various levels of seniority, including Spain, Bulgaria, Mexico, and Belgium.</p></div>
+                <div className="posting-card"><div className="posting-flag">🇮🇳</div><h4>Ambassador to Belarus</h4><p>Led diplomatic missions and bilateral relations</p></div>
+                <div className="posting-card"><div className="posting-flag">🇬🇧</div><h4>Director, Nehru Centre</h4><p>India's flagship cultural centre in London (4 years)</p></div>
+                <div className="posting-card"><div className="posting-flag">🇲🇹</div><h4>High Commissioner to Malta</h4><p>Final diplomatic posting before retirement</p></div>
+                <div className="posting-card"><div className="posting-flag">🇮🇳</div><h4>Deputy Director General</h4><p>Indian Council for Cultural Relations (ICCR)</p></div>
+                <div className="posting-card"><div className="posting-flag">🇪🇸</div><h4>Posting: Spain</h4><p>Various senior diplomatic roles</p></div>
+                <div className="posting-card"><div className="posting-flag">🇧🇬</div><h4>Posting: Bulgaria</h4><p>Various senior diplomatic roles</p></div>
+                <div className="posting-card"><div className="posting-flag">🇲🇽</div><h4>Posting: Mexico</h4><p>Various senior diplomatic roles</p></div>
+                <div className="posting-card"><div className="posting-flag">🇧🇪</div><h4>Posting: Belgium</h4><p>Various senior diplomatic roles</p></div>
               </div>
             </div>
 
@@ -107,7 +96,7 @@ const SangeetaBahadurPage: React.FC = () => {
             <div className="trilogy-section">
               <h3 className="section-subtitle">
                 <BookOpen className="section-icon" size={22} />
-                The Kaal Trilogy
+                The Kaal Tetralogy
               </h3>
               <div className="trilogy-timeline">
                 <div className="trilogy-book">
@@ -128,7 +117,14 @@ const SangeetaBahadurPage: React.FC = () => {
                   <div className="book-number">III</div>
                   <div className="book-details">
                     <h4>Mahakaal (Book III)</h4>
-                    <p>Final installment • Culmination of the epic Indian superhero narrative</p>
+                    <p>Published: 2022 • Culmination of the epic Indian superhero narrative</p>
+                  </div>
+                </div>
+                <div className="trilogy-book">
+                  <div className="book-number">IV</div>
+                  <div className="book-details">
+                    <h4>Drohakaal (Book IV)</h4>
+                    <p>The story that turned the trilogy into a tetralogy, bringing the saga to its true conclusion.</p>
                   </div>
                 </div>
               </div>
@@ -164,8 +160,9 @@ const SangeetaBahadurPage: React.FC = () => {
                 <div className="background-item">
                   <BookOpen size={18} />
                   <div>
-                    <h5>Latest Work</h5>
+                    <h5>Latest Works</h5>
                     <p>Devadasi - Stand-alone novel exploring cultural themes</p>
+                    <p>Drohakaal - The fourth book in the Kaal Tetralogy</p>
                   </div>
                 </div>
               </div>
