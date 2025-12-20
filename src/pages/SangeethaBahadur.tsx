@@ -96,35 +96,52 @@ const SangeetaBahadurPage: React.FC = () => {
             <div className="trilogy-section">
               <h3 className="section-subtitle">
                 <BookOpen className="section-icon" size={22} />
-                The Kaal Tetralogy
+                Literary Works
               </h3>
-              <div className="trilogy-timeline">
-                <div className="trilogy-book">
-                  <div className="book-number">I</div>
-                  <div className="book-details">
-                    <h4>Jaal (Book I)</h4>
-                    <p>Published: 2012 • The beginning of the epic fantasy journey</p>
+              
+              <div className="books-subsection" style={{marginBottom: '2rem'}}>
+                <h4 style={{marginBottom: '1rem', fontWeight: 600}}>The Kaal Tetralogy - Epic Fantasy Series</h4>
+                <div className="trilogy-timeline">
+                  <div className="trilogy-book">
+                    <div className="book-number">I</div>
+                    <div className="book-details">
+                      <h4>Jaal (Book I)</h4>
+                      <p>Published: 2012 • The beginning of the epic fantasy journey</p>
+                    </div>
+                  </div>
+                  <div className="trilogy-book">
+                    <div className="book-number">II</div>
+                    <div className="book-details">
+                      <h4>Vikraal (Book II)</h4>
+                      <p>Published: 2015 • The saga continues with deeper philosophical themes</p>
+                    </div>
+                  </div>
+                  <div className="trilogy-book">
+                    <div className="book-number">III</div>
+                    <div className="book-details">
+                      <h4>Mahakaal (Book III)</h4>
+                      <p>Published: 2022 • Culmination of the epic Indian superhero narrative</p>
+                    </div>
+                  </div>
+                  <div className="trilogy-book">
+                    <div className="book-number">IV</div>
+                    <div className="book-details">
+                      <h4>Drohakaal (Book IV)</h4>
+                      <p>The story that turned the trilogy into a tetralogy, bringing the saga to its true conclusion.</p>
+                    </div>
                   </div>
                 </div>
-                <div className="trilogy-book">
-                  <div className="book-number">II</div>
-                  <div className="book-details">
-                    <h4>Vikraal (Book II)</h4>
-                    <p>Published: 2015 • The saga continues with deeper philosophical themes</p>
-                  </div>
-                </div>
-                <div className="trilogy-book">
-                  <div className="book-number">III</div>
-                  <div className="book-details">
-                    <h4>Mahakaal (Book III)</h4>
-                    <p>Published: 2022 • Culmination of the epic Indian superhero narrative</p>
-                  </div>
-                </div>
-                <div className="trilogy-book">
-                  <div className="book-number">IV</div>
-                  <div className="book-details">
-                    <h4>Drohakaal (Book IV)</h4>
-                    <p>The story that turned the trilogy into a tetralogy, bringing the saga to its true conclusion.</p>
+              </div>
+              
+              <div className="standalone-book-section" style={{borderTop: '1px solid #e0e0e0', paddingTop: '1.5rem'}}>
+                <h4 style={{marginBottom: '1rem', fontWeight: 600}}>Standalone Works</h4>
+                <div className="trilogy-timeline">
+                  <div className="trilogy-book">
+                    <div className="book-number">S</div>
+                    <div className="book-details">
+                      <h4>Devadasi</h4>
+                      <p>A standalone novel exploring profound cultural themes through the lens of Indian traditions and contemporary society.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,18 +168,10 @@ const SangeetaBahadurPage: React.FC = () => {
                   </div>
                 </div>
                 <div className="background-item">
-                  <Users size={18} />
-                  <div>
-                    <h5>Family</h5>
-                    <p>Married to architect/author • Two daughters</p>
-                  </div>
-                </div>
-                <div className="background-item">
                   <BookOpen size={18} />
                   <div>
-                    <h5>Latest Works</h5>
-                    <p>Devadasi - Stand-alone novel exploring cultural themes</p>
-                    <p>Drohakaal - The fourth book in the Kaal Tetralogy</p>
+                    <h5>Literary Works</h5>
+                    <p>Kaal Tetralogy & Standalone Novel Author</p>
                   </div>
                 </div>
               </div>
