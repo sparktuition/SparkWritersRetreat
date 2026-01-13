@@ -28,7 +28,7 @@ const RetreatSeats: React.FC = () => (
         <div className="retreat-seats-payment">
           <div className="retreat-seats-payment-text">
             <h3>Pay via Google Pay</h3>
-            <p>Pay using this QR and share the payment screenshot with us.</p>
+            <p>Pay using this QR and share the payment screenshot with us..</p>
           </div>
           <div className="retreat-stay-cta">
                   <a className="retreat-stay-cta-btn" href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">Register for your stay</a>
