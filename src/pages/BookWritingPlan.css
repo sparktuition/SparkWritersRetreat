@@ -1,0 +1,230 @@
+/* --- Modern Dark Theme for Book Writing Plan --- */
+
+/* 🌟 BRUTE FORCE LOCK: Force dark background and light primary text for the entire section */
+.book-writing-plan-section {
+    /* Locked dark background (e.g., dark slate/gray) */
+    background: #0f172a !important; 
+    /* Locked white text */
+    color: #f1f5f9 !important; 
+    padding: 5rem 1.5rem;
+    font-family: 'Arial', sans-serif; /* Placeholder for var(--font-body) */
+    overflow: hidden;
+}
+
+/* Optional: Subtle Parallax/Visual effect */
+.parallax-bg {
+    /* Hardcoded dark gradients */
+    background-image: 
+        radial-gradient(circle at 1% 100%, #0f172a 0%, transparent 80%),
+        linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* 🌟 BRUTE FORCE LOCK: Inner card should be dark, not transparent white */
+.book-writing-plan-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Locked dark card background (Replaced var(--bg-card)) */
+    background-color: #1e293b !important; 
+    padding: 3.5rem 3rem;
+    border-radius: 0.75rem; /* Placeholder for var(--radius-lg) */
+    /* Locked dark shadow */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4) !important; /* Placeholder for var(--card-shadow) */
+    /* Locked dark border */
+    border: 1px solid #334155 !important; /* Replaced var(--border-light) */
+}
+
+/* --- Typography --- */
+/* 🌟 BRUTE FORCE LOCK: Title should be white */
+.book-writing-plan-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f1f5f9 !important; /* Locked white text (Replaced var(--text-primary)) */
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* --- Topic List (The Core Plan) --- */
+.book-writing-plan-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+
+/* 🌟 BRUTE FORCE LOCK: Topic item text should be light and divider should be dark */
+.book-writing-plan-inner .topic-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 0.75rem 0;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #e2e8f0 !important; /* Locked light secondary text (Replaced var(--text-primary)) */
+    /* Locked dark dotted border */
+    border-bottom: 1px dotted #475569 !important; /* Replaced var(--border-light) */
+}
+
+.topic-item:last-child {
+    border-bottom: none !important;
+}
+
+/* 🌟 BRUTE FORCE LOCK: Topic number accent color */
+.topic-number {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #c4b5fd !important; /* Locked primary accent color (Replaced var(--color-primary)) */
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+    /* Small circular background for the number (dark semi-transparent) */
+    background-color: rgba(139, 92, 246, 0.2) !important; 
+    padding: 0 0.5rem;
+    border-radius: 4px;
+}
+
+/* --- Bonus/Publishing Section --- */
+/* 🌟 BRUTE FORCE LOCK: Bonus section container colors */
+.book-writing-plan-bonus {
+    margin-top: 3rem;
+    padding: 2rem;
+    /* Locked light blue semi-transparent background */
+    background-color: rgba(59, 130, 246, 0.15) !important;
+    border-radius: 0.5rem; /* Placeholder for var(--radius-md) */
+    /* Locked info accent border */
+    border: 2px solid #60a5fa !important; /* Replaced var(--color-info) */
+    text-align: center;
+}
+
+/* 🌟 BRUTE FORCE LOCK: Bonus icon color */
+.bonus-icon {
+    color: #60a5fa !important; /* Locked info accent color (Replaced var(--color-info)) */
+    margin-bottom: 0.75rem;
+    animation: pulse-sparkle 1.5s infinite alternate;
+}
+
+@keyframes pulse-sparkle {
+    from {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    to {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+/* 🌟 BRUTE FORCE LOCK: Bonus title color */
+.bonus-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #93c5fd !important; /* Locked light info color (Replaced var(--color-info)) */
+    margin-bottom: 1rem;
+}
+
+/* 🌟 BRUTE FORCE LOCK: Bonus text color */
+.book-writing-plan-bonus .bonus-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f1f5f9 !important; /* Locked white text (Replaced var(--text-primary)) */
+}
+
+.bonus-text strong {
+    /* Locked primary accent color and highlight */
+    color: #c4b5fd !important; /* Replaced var(--color-primary-dark) */
+    background-color: rgba(139, 92, 246, 0.2) !important; /* Subtle highlight */
+    padding: 0 0.25rem;
+    border-radius: 2px;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .book-writing-plan-inner {
+        padding: 2rem 1rem;
+    }
+    
+    .book-writing-plan-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .book-writing-plan-list {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .topic-item {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .book-writing-plan-bonus {
+        padding: 1.5rem;
+    }
+}
+
+/* 🌙 Light mode support: BRUTE FORCE REVERSE */
+@media (prefers-color-scheme: light) {
+    
+    /* Reverse section background and default text */
+    .book-writing-plan-section {
+        background: #f8fafc !important;
+        color: #1e293b !important;
+    }
+    
+    /* Reverse inner card to white */
+    .book-writing-plan-inner {
+        background-color: #ffffff !important; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+        border: 1px solid #e2e8f0 !important;
+    }
+
+    /* Reverse title and topic text */
+    .book-writing-plan-title,
+    .book-writing-plan-inner .topic-item {
+        color: #1e293b !important;
+    }
+
+    .book-writing-plan-inner .topic-item {
+        border-bottom: 1px dotted #cbd5e1 !important; 
+    }
+
+    .topic-number {
+        /* Reverse to dark primary accent */
+        color: #8b5cf6 !important;
+        background-color: rgba(139, 92, 246, 0.1) !important; 
+    }
+
+    /* Reverse Bonus Section Colors */
+    .book-writing-plan-bonus {
+        background-color: rgba(59, 130, 246, 0.05) !important;
+        border: 2px solid #3b82f6 !important;
+    }
+
+    .bonus-icon,
+    .bonus-title {
+        color: #3b82f6 !important;
+    }
+
+    .book-writing-plan-bonus .bonus-text {
+        color: #1e293b !important; 
+    }
+    
+    .bonus-text strong {
+        color: #6366f1 !important;
+        background-color: rgba(59, 130, 246, 0.1) !important;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

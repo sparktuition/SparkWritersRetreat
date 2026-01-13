@@ -1,0 +1,180 @@
+/* RetreatWhy.css */
+
+/* --- Core Section Styles --- */
+.retreat-why {
+    /* Lock background to a light color (off-white/light gray) */
+    background-color: #f8fafc !important; /* Replaced var(--bg-secondary) */
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif; /* Placeholder for var(--font-body) */
+}
+
+.retreat-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* --- Typography --- */
+
+/* HIGH SPECIFICITY: Lock main title color to dark */
+.retreat-why .why-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b !important; /* Locked dark primary color (Replaced var(--text-primary)) */
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+    font-family: 'Georgia', serif; /* Placeholder for var(--font-heading) */
+}
+
+/* HIGH SPECIFICITY: Lock subtitle color to dark secondary */
+.retreat-why .why-subtitle {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #64748b !important; /* Locked dark muted color (Replaced var(--text-muted)) */
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+}
+
+/* --- Features Grid Layout --- */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* --- Individual Feature Card --- */
+
+/* HIGH SPECIFICITY: Lock card background and border to light colors */
+.retreat-why .feature-card {
+    background-color: #ffffff !important; /* Locked white background (Replaced var(--bg-card)) */
+    border: 1px solid #e2e8f0 !important; /* Locked light border (Replaced var(--border-light)) */
+    border-radius: 0.5rem; /* Placeholder for var(--radius-md) */
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Placeholder for var(--transition-normal) */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important; /* Placeholder for var(--shadow-sm) */
+}
+
+.retreat-why .feature-card:hover {
+    transform: translateY(-5px);
+    /* Hardcoded shadow and accent outline for hover */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(139, 92, 246, 0.2) !important; /* Replaced var(--card-shadow-hover) */
+}
+
+/* --- Feature Icon --- */
+
+.retreat-why .feature-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    /* Lock icon background to a very light color */
+    background-color: #f3f4f6 !important; /* Replaced var(--icon-bg) */
+    border-radius: 9999px; /* Placeholder for var(--radius-full) */
+    margin: 0 auto 20px auto;
+    /* Lock icon color to a primary accent */
+    color: #8b5cf6 !important; /* Locked purple (Replaced var(--color-primary)) */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.retreat-why .feature-card:hover .feature-icon {
+    /* Hardcoded colors for hover state */
+    background-color: #8b5cf6 !important; /* Locked primary color */
+    color: #ffffff !important; /* Locked white text */
+}
+
+/* --- Feature Card Typography --- */
+
+/* 🌟 FIX 1: Lock card title to dark */
+.retreat-why .feature-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1e293b !important; /* Locked dark primary color (Replaced var(--text-primary)) */
+    margin-bottom: 10px;
+}
+
+/* 🌟 FIX 2: Lock description to dark secondary */
+.retreat-why .feature-description {
+    font-size: 0.95rem;
+    color: #475569 !important; /* Locked dark secondary color (Replaced var(--text-secondary)) */
+    line-height: 1.5;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 992px) {
+    .retreat-why {
+        padding: 60px 15px;
+    }
+
+    .retreat-why .why-title {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .retreat-why .why-title {
+        font-size: 1.75rem;
+    }
+    
+    .retreat-why .why-subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* 🌙 Dark mode support: Highly Specific Overrides */
+/* Only switch to dark backgrounds and light text here */
+@media (prefers-color-scheme: dark) {
+    
+    .retreat-why {
+        background-color: #0f172a !important; 
+    }
+    
+    .retreat-why .why-title {
+        color: #f1f5f9 !important;
+    }
+    
+    .retreat-why .why-subtitle {
+        color: #cbd5e1 !important;
+    }
+    
+    .retreat-why .feature-card {
+        background-color: #1e293b !important;
+        border: 1px solid #334155 !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+    }
+    
+    .retreat-why .feature-card:hover {
+        /* Lighter shadow for dark mode hover */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(139, 92, 246, 0.4) !important;
+    }
+
+    .retreat-why .feature-icon {
+        background-color: #334155 !important;
+        color: #c4b5fd !important;
+    }
+
+    .retreat-why .feature-card:hover .feature-icon {
+        background-color: #8b5cf6 !important;
+        color: #f1f5f9 !important;
+    }
+    
+    /* Ensure text colors are light in dark mode */
+    .retreat-why .feature-title {
+        color: #f1f5f9 !important;
+    }
+
+    .retreat-why .feature-description {
+        color: #e2e8f0 !important;
+    }
+}

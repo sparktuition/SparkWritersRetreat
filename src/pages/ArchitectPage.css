@@ -1,0 +1,516 @@
+/* Architect Page Styles */
+.architect-page {
+  padding: 5rem 0;
+  background: var(--gradient-info) !important;
+  color: #ffffff !important;
+  min-height: 100vh;
+}
+
+/* Force all text white on dark architect page */
+.architect-page h1,
+.architect-page h2,
+.architect-page h3,
+.architect-page h4,
+.architect-page h5,
+.architect-page h6 {
+  color: #ffffff !important;
+}
+
+.architect-page p {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.architect-page-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.architect-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.architect-label {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--color-info), var(--color-info-light));
+  color: var(--text-inverse);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.architect-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-inverse);
+  background: linear-gradient(90deg, var(--color-info-light), var(--color-info));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.architect-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.architect-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.architect-image-wrapper {
+  position: relative;
+}
+
+.architect-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(14, 165, 233, 0.2);
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border: 3px solid rgba(14, 165, 233, 0.3);
+}
+
+.architect-badge {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--color-info), var(--color-info-dark));
+  color: var(--text-inverse);
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
+  text-align: center;
+}
+
+.architect-bio {
+  padding-top: 0.5rem;
+}
+
+.bio-intro {
+  margin-bottom: 2rem;
+}
+
+.bio-highlight {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(14, 165, 233, 0.1);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-info);
+}
+
+/* Philosophy Section */
+.architect-philosophy {
+  margin: 2.5rem 0;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.philosophy-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  transition: transform 0.3s;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+  background: rgba(14, 165, 233, 0.1);
+}
+
+.philosophy-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(14, 165, 233, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--color-info-light);
+}
+
+.philosophy-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-info-light);
+  margin-bottom: 0.5rem;
+}
+
+.philosophy-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Notable Projects */
+.notable-projects {
+  margin: 2.5rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image-placeholder {
+  height: 120px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(56, 189, 248, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-info-light);
+}
+
+.project-details {
+  padding: 1.2rem;
+}
+
+.project-details h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-inverse);
+  margin-bottom: 0.5rem;
+}
+
+.project-details p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.project-tag {
+  display: inline-block;
+  background: rgba(14, 165, 233, 0.2);
+  color: var(--color-info-light);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Adventure Section */
+.adventure-section {
+  margin: 2.5rem 0;
+}
+
+.adventure-timeline {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(14, 165, 233, 0.1);
+}
+
+.adventure-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.adventure-item:last-child {
+  border-bottom: none;
+}
+
+.adventure-marker {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.adventure-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-info-light);
+  margin-bottom: 0.3rem;
+}
+
+.adventure-content p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Architect Mission */
+.architect-mission {
+  background: rgba(14, 165, 233, 0.15);
+  border-left: 4px solid var(--color-info);
+  padding: 1.5rem;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin: 2.5rem 0;
+}
+
+.architect-mission blockquote {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0 0 0.5rem 0;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.architect-mission cite {
+  font-size: 0.95rem;
+  color: var(--color-info-light);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Career Timeline */
+.career-timeline {
+  margin: 2.5rem 0;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-info), var(--color-info-light));
+}
+
+.timeline-item {
+  position: relative;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -0.4rem;
+  top: 1.8rem;
+  width: 12px;
+  height: 12px;
+  background: var(--color-info);
+  border-radius: 50%;
+  border: 2px solid #0c4a6e;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: var(--color-info-light);
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.timeline-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-inverse);
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+/* Interview Section */
+.interview-section {
+  margin: 2.5rem 0 1rem;
+}
+
+.interview-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(14, 165, 233, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(14, 165, 233, 0.3);
+}
+
+.interview-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(14, 165, 233, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-info-light);
+  flex-shrink: 0;
+}
+
+.interview-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-inverse);
+  margin-bottom: 0.3rem;
+}
+
+.interview-content p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.8rem;
+}
+
+.interview-link {
+  color: var(--color-info-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.interview-link:hover {
+  color: var(--color-info);
+  text-decoration: underline;
+}
+
+/* Credential Items - Updated */
+.credential-item {
+  display: flex;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.credential-item:hover {
+  transform: translateY(-3px);
+  background: rgba(14, 165, 233, 0.1);
+  border-color: rgba(14, 165, 233, 0.3);
+}
+
+.credential-icon-wrapper {
+  background: rgba(14, 165, 233, 0.2);
+  padding: 0.8rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-info-light);
+}
+
+.credential-content h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--color-info-light);
+}
+
+.credential-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: var(--color-info-light);
+}
+
+.section-icon {
+  color: var(--color-info-light);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .architect-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .architect-image-wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .philosophy-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .architect-page {
+    padding: 3rem 0;
+  }
+  
+  .architect-title {
+    font-size: 1.8rem;
+  }
+  
+  .philosophy-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .adventure-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .interview-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .credential-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .credential-icon-wrapper {
+    align-self: center;
+  }
+}

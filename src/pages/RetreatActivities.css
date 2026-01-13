@@ -1,0 +1,141 @@
+/* RetreatActivities.css */
+
+/* --- Parallax Background Section --- */
+.retreat-activities-section {
+    position: relative;
+    /* Background Image: Using the provided URL */
+    background-image: url('https://images.unsplash.com/photo-1544362143-a619c991f868?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080');
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: fixed;
+    padding: 100px 20px;
+    /* Lock default text color to WHITE for contrast against dark background */
+    color: #ffffff !important; 
+    text-align: center;
+    font-family: 'Georgia', serif; /* Placeholder for var(--font-heading) */
+}
+
+/* --- Overlay for Readability --- */
+.retreat-activities-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Lock Overlay to a dark, semi-transparent color */
+    background: rgba(15, 23, 42, 0.6) !important; 
+    z-index: 1;
+}
+
+.retreat-activities-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- Typography --- */
+.retreat-activities-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff !important; /* Locked white color for contrast */
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.5px;
+}
+
+/* --- Content Layout --- */
+.retreat-activities-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* --- Individual Activity Item --- */
+
+/* HIGH SPECIFICITY: Lock card background to transparent white (glass effect) */
+.retreat-activities-section .activity-item {
+    background-color: rgba(255, 255, 255, 0.9) !important; /* Hardcoded glass white */
+    padding: 30px;
+    border-radius: 8px; /* Placeholder for var(--radius-md) */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Placeholder for var(--shadow-lg) */
+    flex: 1;
+    max-width: 450px;
+    text-align: left;
+    transition: transform 0.3s ease; /* Placeholder for var(--transition-normal) */
+}
+
+.retreat-activities-section .activity-item:hover {
+    transform: translateY(-5px);
+}
+
+/* HIGH SPECIFICITY: Lock Icon Color to a rich accent */
+.retreat-activities-section .activity-icon {
+    color: #7c3aed !important; /* Locked Deep Violet/Lavender (Placeholder for var(--color-primary)) */
+    margin-bottom: 15px;
+}
+
+/* 🌟 PRIMARY FIX 1: Lock paragraph text to dark color */
+.retreat-activities-section .activity-item p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #1e293b !important; /* Locked dark text for high readability on white background */
+}
+
+/* 🌟 PRIMARY FIX 2: Lock strong text (secondary accent) to dark blue */
+.retreat-activities-section .activity-item strong {
+    color: #3b82f6 !important; /* Locked Blue (Placeholder for var(--color-info)) */
+    font-weight: 700;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 850px) {
+    .retreat-activities-section .retreat-activities-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retreat-activities-section .activity-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .retreat-activities-section .retreat-activities-title {
+        font-size: 2rem;
+        color: #ffffff !important;
+    }
+
+    .retreat-activities-section {
+        padding: 60px 15px;
+        background-attachment: scroll; /* Disable parallax on mobile for performance */
+    }
+}
+
+/* 🌙 Dark mode support: Highly Specific Overrides */
+/* In dark mode, the card elements will switch to a dark background with light text */
+@media (prefers-color-scheme: dark) {
+    
+    /* Darken the background section */
+    .retreat-activities-section::before {
+        background: rgba(15, 23, 42, 0.8) !important; 
+    }
+
+    /* Darken the card background and ensure text is light */
+    .retreat-activities-section .activity-item {
+        background-color: rgba(30, 41, 59, 0.9) !important;
+    }
+    
+    /* Reverse the text colors back to light */
+    .retreat-activities-section .activity-item p {
+        color: #f1f5f9 !important; 
+    }
+    
+    .retreat-activities-section .activity-item strong {
+        color: #93c5fd !important; /* Lighter blue for dark mode accent */
+    }
+    
+    .retreat-activities-section .activity-icon {
+        color: #c4b5fd !important; /* Lighter violet for dark mode accent */
+    }
+}
