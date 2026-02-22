@@ -1,0 +1,300 @@
+/* --- Ultra-Modern Light Theme for Retreat Contact Section --- */
+
+.retreat-contact {
+  /* Lock background to a light color */
+  background-color: #f8fafc !important; /* Replaced var(--bg-secondary) */
+  color: #1e293b !important; /* Locked dark primary text color */
+  padding: 6rem 1.5rem;
+  font-family: 'Arial', sans-serif; /* Placeholder for var(--font-body) */
+  text-align: center;
+}
+
+.retreat-contact-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --- Header Section --- */
+.contact-header {
+  margin-bottom: 4rem;
+}
+
+/* HIGH SPECIFICITY: Lock Label Colors */
+.retreat-contact .contact-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #dc2626 !important; /* Locked red/error color (Replaced var(--color-error)) */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+
+/* HIGH SPECIFICITY: Lock Title Colors */
+.retreat-contact .contact-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #1e293b !important; /* Locked dark primary color */
+  margin-bottom: 1rem;
+}
+
+.retreat-contact .contact-subtitle {
+  font-size: 1.15rem;
+  color: #64748b !important; /* Locked dark muted color (Replaced var(--text-muted)) */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Inspirational Quotes Section --- */
+.inspirational-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* HIGH SPECIFICITY: Lock Card Background and Border */
+.retreat-contact .inspiration-card {
+  flex: 1;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #ffffff !important; /* Locked white background (Replaced var(--bg-card)) */
+  border-radius: 0.5rem; /* Placeholder for var(--radius-md) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Placeholder for var(--card-shadow) */
+  border: 1px solid #e2e8f0 !important; /* Locked light border (Replaced var(--border-light)) */
+  position: relative;
+  text-align: left;
+}
+
+.retreat-contact .quote-icon {
+  color: #dc2626 !important; /* Locked red/error color */
+  opacity: 0.2;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* 🌟 FIX 1: Lock Quote Text to Dark */
+.retreat-contact .inspiration-text {
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #1e293b !important; /* Locked dark primary color */
+  padding: 1rem 0;
+}
+
+.retreat-contact .inspiration-icon {
+  color: #dc2626 !important; /* Locked red/error color */
+  float: right;
+  margin-top: 0.5rem;
+}
+
+/* --- Contact Options --- */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-align: left;
+  flex: 1;
+  max-width: 450px;
+}
+
+/* HIGH SPECIFICITY: Lock Icon Wrapper Colors */
+.retreat-contact .contact-icon-wrapper {
+  background-color: #3b82f6 !important; /* Locked blue info color (Replaced var(--color-info)) */
+  color: #ffffff !important; /* Locked white text */
+  padding: 1rem;
+  border-radius: 9999px; /* Placeholder for var(--radius-full) */
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3) !important; /* Placeholder for var(--shadow-md) */
+}
+
+/* 🌟 FIX 4: Lock Contact Method Title to Dark */
+.retreat-contact .contact-method {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1e293b !important; /* Locked dark primary color */
+  margin-bottom: 0.25rem;
+}
+
+/* 🌟 FIX 5: Lock Contact Info to Dark */
+.retreat-contact .contact-info {
+  font-size: 0.95rem;
+  color: #64748b !important; /* Locked dark muted color */
+  margin-bottom: 0.5rem;
+}
+
+/* 🌟 FIX 6: Lock Contact Link to Blue */
+.retreat-contact .contact-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #3b82f6 !important; /* Locked blue info color */
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.4rem;
+  transition: color 0.15s ease; /* Placeholder for var(--transition-fast) */
+}
+
+.retreat-contact .contact-link:hover {
+  color: #1e293b !important; /* Hover color should contrast with white background */
+  text-decoration: underline;
+}
+
+/* 🌟 FIX 7: Lock Contact Hint to Dark */
+.retreat-contact .contact-hint {
+  font-size: 0.85rem;
+  color: #64748b !important; /* Locked dark muted color */
+}
+
+/* --- Final Message --- */
+.retreat-contact .final-message {
+  /* Lock light border */
+  border-top: 1px solid #e2e8f0 !important; 
+  padding-top: 3rem;
+}
+
+/* 🌟 FIX 8: Lock Final Title to Dark */
+.retreat-contact .final-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b !important;
+  margin-bottom: 1rem;
+}
+
+/* 🌟 FIX 9: Lock Final Text to Dark */
+.retreat-contact .final-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #64748b !important;
+  max-width: 750px;
+  margin: 0 auto 2rem;
+}
+
+.inspiration-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* 🌟 FIX 10: Lock Tag colors */
+.retreat-contact .tag {
+  background-color: #f3f4f6 !important; /* Locked light icon background */
+  color: #1e293b !important; /* Locked dark primary color */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  .retreat-contact .inspirational-section,
+  .retreat-contact .contact-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .retreat-contact .inspiration-card,
+  .retreat-contact .contact-card {
+    max-width: 100%;
+  }
+
+  .retreat-contact .contact-section {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+    .retreat-contact {
+        padding: 4rem 1rem;
+    }
+
+    .retreat-contact .contact-title {
+        font-size: 2rem;
+    }
+    
+    .retreat-contact .final-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* 🌙 Dark mode support: Highly Specific Overrides */
+/* Only switch to dark backgrounds and light text here */
+@media (prefers-color-scheme: dark) {
+    .retreat-contact {
+        background-color: #0f172a !important; 
+    }
+    
+    .retreat-contact .contact-title,
+    .retreat-contact .cta-title,
+    .retreat-contact .final-title,
+    .retreat-contact .contact-method {
+        color: #f1f5f9 !important;
+    }
+
+    .retreat-contact .contact-subtitle,
+    .retreat-contact .cta-description,
+    .retreat-contact .final-text,
+    .retreat-contact .contact-info,
+    .retreat-contact .contact-hint,
+    .retreat-contact .tag {
+        color: #e2e8f0 !important;
+    }
+
+    .retreat-contact .inspiration-card {
+        background-color: #1e293b !important;
+        border: 1px solid #334155 !important;
+    }
+    
+    .retreat-contact .inspiration-text {
+        color: #f1f5f9 !important;
+    }
+
+    .retreat-contact .cta-section {
+        background-color: #1e293b !important;
+        border: 2px solid #334155 !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    .retreat-contact .cta-title {
+        color: #f1f5f9 !important;
+    }
+    
+    .retreat-contact .cta-description {
+        color: #cbd5e1 !important;
+    }
+    
+    .retreat-contact .contact-icon-wrapper {
+        background-color: #93c5fd !important; /* Lighter blue for dark mode */
+        color: #1e293b !important; /* Dark text on bright icon */
+    }
+    
+    .retreat-contact .contact-link {
+        color: #93c5fd !important;
+    }
+    
+    .retreat-contact .contact-link:hover {
+        color: #f1f5f9 !important;
+    }
+
+    .retreat-contact .final-message {
+        border-top: 1px solid #334155 !important;
+    }
+    
+    .retreat-contact .tag {
+        background-color: #334155 !important;
+        border: 1px solid #475569 !important;
+    }
+}

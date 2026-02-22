@@ -1,0 +1,209 @@
+/* --- Retreat Cuisine Section - ULTRA-LOCKED & THEME-AWARE --- */
+
+/* Fallback Defaults for Light Mode (Using explicit colors for maximum safety) */
+.retreat-cuisine-section {
+    /* ULTRA LOCK: Chaining class names for high specificity */
+    padding: 6rem 0;
+    
+    /* Fallback to Light Background */
+    background: linear-gradient(135deg, var(--bg-primary, #ffffff) 0%, var(--bg-secondary, #fef2f2) 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.retreat-cuisine-section.theme-rose {
+    background: linear-gradient(135deg, var(--bg-primary, #fef2f2) 0%, var(--bg-secondary, #ffe4e6) 100%) !important;
+}
+
+.retreat-cuisine-section .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Gradient Overlays (Hardcoded Light) */
+.retreat-cuisine-section.retreat-cuisine-section::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, transparent 100%) !important;
+}
+.retreat-cuisine-section.retreat-cuisine-section::after {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, transparent 100%) !important;
+}
+
+.retreat-cuisine-section .retreat-cuisine-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* 🔒 Text and Title Colors (Locked to Dark Fallback) */
+.retreat-cuisine-section .retreat-cuisine-title.retreat-cuisine-title {
+    font-size: clamp(2rem, 5vw, 3.5rem) !important; 
+    font-weight: 800 !important;
+    color: var(--text-primary, #1e293b) !important; /* Lock dark text fallback */
+    text-align: center !important;
+    margin-bottom: 2.5rem !important;
+    line-height: 1.1 !important;
+}
+
+.retreat-cuisine-section .retreat-cuisine-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-error, #f43f5e), var(--color-warning, #f59e0b)) !important;
+    margin: 1.5rem auto !important;
+    border-radius: 2px !important;
+}
+
+.retreat-cuisine-section .retreat-cuisine-content p.retreat-cuisine-content,
+.retreat-cuisine-section .retreat-cuisine-content p {
+    font-size: 1.2rem !important;
+    line-height: 1.8 !important;
+    color: var(--text-primary, #1e293b) !important; /* Lock dark text fallback */
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+}
+
+.retreat-cuisine-section .retreat-cuisine-content p:first-of-type {
+    font-size: 1.3rem !important;
+    color: var(--text-primary, #1e293b) !important; /* Lock dark text fallback */
+    font-weight: 500 !important;
+}
+
+/* 🔒 Cuisine List Items (Locked to Light/Glass Fallback) */
+.retreat-cuisine-section .cuisine-item.cuisine-item {
+    display: flex !important;
+    align-items: center !important;
+    padding: 1.5rem !important;
+    /* Lock Light Glass Effect */
+    background: var(--bg-glass, rgba(255, 255, 255, 0.7)) !important; 
+    border: 1px solid var(--border-light, #e2e8f0) !important;
+    box-shadow: var(--card-shadow, 0 4px 6px rgba(0, 0, 0, 0.1)) !important;
+}
+
+.retreat-cuisine-section .cuisine-item:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: var(--card-shadow-hover, 0 10px 15px rgba(0, 0, 0, 0.15)) !important;
+    border-color: rgba(239, 68, 68, 0.2) !important;
+}
+
+.retreat-cuisine-section .cuisine-icon {
+    color: var(--color-error, #f43f5e) !important;
+    flex-shrink: 0 !important;
+}
+
+.retreat-cuisine-section .cuisine-item:hover .cuisine-icon {
+    color: var(--color-warning, #f59e0b) !important;
+}
+
+.retreat-cuisine-section .cuisine-item span {
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    color: var(--text-primary, #1e293b) !important; /* Lock dark text fallback */
+}
+
+
+/* -------------------------------------------------------- */
+/* 🌙 Dark mode support: ULTRA-LOCKED Overrides */
+/* -------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+    
+    .retreat-cuisine-section.retreat-cuisine-section {
+        /* Lock Dark Background */
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+    }
+    
+    .retreat-cuisine-section.retreat-cuisine-section::before,
+    .retreat-cuisine-section.retreat-cuisine-section::after {
+        /* Lock Dark Gradient Overlay */
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.95) 0%, transparent 100%) !important;
+    }
+    
+    /* 🔒 Lock all text to Light color */
+    .retreat-cuisine-section .retreat-cuisine-title.retreat-cuisine-title,
+    .retreat-cuisine-section .retreat-cuisine-content p,
+    .retreat-cuisine-section .cuisine-item span {
+        color: #f1f5f9 !important;
+    }
+
+    /* 🔒 Lock cards to Dark appearance */
+    .retreat-cuisine-section .cuisine-item.cuisine-item {
+        background: #1e293b !important; 
+        border-color: #334155 !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4) !important;
+    }
+    
+    .retreat-cuisine-section .cuisine-item:hover {
+        border-color: rgba(255, 255, 255, 0.3) !important;
+    }
+
+    /* 🔒 Lock accents to Dark mode colors */
+    .retreat-cuisine-section .cuisine-icon {
+        color: #f87171 !important; 
+    }
+    .retreat-cuisine-section .cuisine-item:hover .cuisine-icon {
+        color: #fde047 !important;
+    }
+    .retreat-cuisine-section .retreat-cuisine-title::after {
+        background: linear-gradient(90deg, #f87171, #fde047) !important; 
+    }
+}
+
+
+/* -------------------------------------------------------- */
+/* 📱 Responsive design and Mobile Optimizations (ULTRA-LOCKED) */
+/* -------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .retreat-cuisine-section {
+        padding: 4rem 0 !important; 
+    }
+    
+    .retreat-cuisine-section .retreat-cuisine-inner {
+        padding: 0 1.5rem !important;
+    }
+    
+    .retreat-cuisine-section .cuisine-list {
+        grid-template-columns: 1fr !important; 
+        gap: 1rem !important;
+    }
+    
+    .retreat-cuisine-section .retreat-cuisine-content p,
+    .retreat-cuisine-section .retreat-cuisine-content p:first-of-type {
+        font-size: 1.1rem !important;
+        line-height: 1.7 !important;
+    }
+    
+    .retreat-cuisine-section .retreat-cuisine-title {
+        font-size: 2.2rem !important;
+    }
+    
+    /* 🔒 Hide large floating elements on mobile in both themes */
+    .retreat-cuisine-section .floating-element {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .retreat-cuisine-section {
+        padding: 3rem 0 !important;
+    }
+    
+    .retreat-cuisine-section .retreat-cuisine-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .retreat-cuisine-section .retreat-cuisine-content p {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .retreat-cuisine-section .cuisine-item span {
+        font-size: 1rem !important;
+    }
+}

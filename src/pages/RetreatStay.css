@@ -1,0 +1,208 @@
+/* --- Retreat Stay Section Styles (FORCING LIGHT THEME) --- */
+
+.retreat-stay-section {
+    padding: 5rem 0;
+    /* 🌟 LOCK 1: Background gradient to light colors */
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%) !important; /* Replaced var(--bg-secondary) and var(--bg-primary) */
+    position: relative;
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.theme-sand {
+    /* Hardcoded sand/light theme colors */
+    background: linear-gradient(180deg, #f1f5f9 0%, #ffffff 100%) !important;
+}
+
+.retreat-stay-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* 🌟 LOCK 2: Title color is already dark, ensure font-family is visible */
+.retreat-stay-title {
+    font-family: 'Georgia', serif; /* Placeholder for var(--font-heading) */
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    color: #1e293b !important;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+/* 🌟 LOCK 3: Title underline uses hardcoded accent colors */
+.retreat-stay-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    /* Hardcoded accent gradient (e.g., Orange/Gold) */
+    background: linear-gradient(90deg, #facc15, #d97706); /* Replaced var(--color-accent), var(--color-accent-dark) */
+    border-radius: 2px;
+}
+
+.retreat-stay-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+.stagger-list {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🌟 LOCK 4: Paragraph text color is already dark */
+.retreat-stay-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1e293b !important;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding: 0 1rem;
+}
+
+/* 🌟 LOCK 5: Decorative element color (Warning accent) */
+.retreat-stay-content p::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f59e0b !important; /* Locked warning color (Orange) (Replaced var(--color-warning)) */
+    font-size: 1.2rem;
+}
+
+/* 🌟 LOCK 6: Decorative element color (Warning accent) */
+.retreat-stay-content p::after {
+    content: '✦';
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f59e0b !important; /* Locked warning color (Orange) (Replaced var(--color-warning)) */
+    font-size: 1.2rem;
+}
+
+/* 🌟 LOCK 7: Decorative Section Borders (Accent Gradient) */
+.retreat-stay-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    /* Hardcoded accent gradient (e.g., Orange/Gold) */
+    background: linear-gradient(90deg, #facc15, #d97706, #facc15); /* Replaced var(--color-accent), var(--color-accent-dark) */
+    opacity: 0.8;
+}
+
+.retreat-stay-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    /* Hardcoded accent gradient (e.g., Orange/Gold) */
+    background: linear-gradient(90deg, #facc15, #d97706, #facc15); /* Replaced var(--color-accent), var(--color-accent-dark) */
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .retreat-stay-section {
+        padding: 3rem 0;
+    }
+    
+    .retreat-stay-content p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .retreat-stay-title::after {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .retreat-stay-inner {
+        padding: 0 1rem;
+    }
+    
+    .retreat-stay-content p {
+        line-height: 1.6;
+    }
+    
+    .retreat-stay-content p::before,
+    .retreat-stay-content p::after {
+        display: none;
+    }
+}
+
+/* AOS animation compatibility (No changes to colors) */
+[data-aos="fade-up"] {
+    transform: translateY(30px);
+    opacity: 0;
+    transition-property: transform, opacity;
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* 🌙 Dark mode support: BRUTE FORCE REVERSE */
+@media (prefers-color-scheme: dark) {
+    .retreat-stay-section {
+        /* Reverse background to dark */
+        background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%) !important; 
+    }
+    
+    .theme-sand {
+        background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%) !important;
+    }
+
+    /* Reverse title and text to light */
+    .retreat-stay-title {
+        color: #f1f5f9 !important;
+    }
+    
+    .retreat-stay-content p {
+        color: #e2e8f0 !important;
+    }
+    
+    /* Ensure decorative elements remain visible against dark background */
+    .retreat-stay-title::after {
+        background: linear-gradient(90deg, #fde047, #f59e0b) !important;
+    }
+    
+    .retreat-stay-content p::before,
+    .retreat-stay-content p::after {
+        color: #fde047 !important;
+    }
+    
+    .retreat-stay-section::before,
+    .retreat-stay-section::after {
+        background: linear-gradient(90deg, #fde047, #f59e0b, #fde047) !important;
+    }
+}

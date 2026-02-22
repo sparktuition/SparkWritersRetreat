@@ -1,0 +1,54 @@
+
+/* Shared layout styles for all retreat pages */
+:root{
+  --retreat-max-width: 1200px;
+  --retreat-side-padding-desktop: 160px;
+  --retreat-side-padding-tablet: 100px;
+  --retreat-side-padding-mobile: 16px;
+}
+
+/* Prevent horizontal scroll from decorative offsets or wide elements */
+html, body {
+  overflow-x: hidden;
+}
+
+.retreat-page-container {
+  background: var(--bg-primary);
+  overflow-x: hidden;
+}
+
+/* Container to standardize content width across pages */
+.retreat-inner {
+  max-width: var(--retreat-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Optional helper to add consistent side padding to sections */
+.retreat-section {
+  padding-left: var(--retreat-side-padding-desktop);
+  padding-right: var(--retreat-side-padding-desktop);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .retreat-section {
+    padding-left: var(--retreat-side-padding-tablet);
+    padding-right: var(--retreat-side-padding-tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --retreat-side-padding-tablet: 16px;
+  }
+  .retreat-section {
+    padding-left: var(--retreat-side-padding-mobile);
+    padding-right: var(--retreat-side-padding-mobile);
+  }
+}
+

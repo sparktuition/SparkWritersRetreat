@@ -1,0 +1,139 @@
+/* --- Ultra-Modern Light Theme for Retreat Essentials --- */
+
+.retreat-essentials-section {
+  /* Subtle, layered light background for a modern feel */
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  color: var(--text-primary);
+  padding: 5rem 1.5rem;
+  font-family: var(--font-body);
+  overflow: hidden; /* For clean edges */
+}
+
+/* Optional: Subtle Parallax/Visual effect if needed */
+.parallax-bg {
+    background-attachment: scroll; /* Keep it subtle on light theme */
+}
+
+.retreat-essentials-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--bg-card);
+  padding: 3rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--card-shadow);
+}
+
+/* --- Typography --- */
+.retreat-essentials-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid var(--border-light);
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Essentials List (What to Bring) --- */
+.essentials-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.essentials-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-left: 5px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.essentials-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow);
+}
+
+.essentials-icon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  /* Use the default size from the component (24px) */
+}
+
+.essentials-item strong {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.essentials-item div {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Do's and Don'ts List --- */
+.dos-list {
+  list-style: none;
+  padding: 0;
+  /* Use a flex layout for better arrangement */
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.dos-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  /* Differentiate with a very light background shade */
+  background-color: var(--bg-tertiary); 
+}
+
+.dos-item span {
+    color: var(--text-secondary);
+}
+
+.dos-icon {
+  flex-shrink: 0;
+  font-weight: 700;
+}
+
+.do-icon {
+  color: var(--color-secondary);
+}
+
+.dont-icon {
+  color: var(--color-error);
+}
+
+/* --- Accessibility/Responsive Design --- */
+@media (max-width: 768px) {
+  .retreat-essentials-section {
+    padding: 3rem 1rem;
+  }
+  
+  .retreat-essentials-inner {
+    padding: 2rem 1.5rem;
+  }
+
+  .retreat-essentials-title {
+    font-size: 1.75rem;
+  }
+
+  .essentials-list {
+    grid-template-columns: 1fr;
+  }
+}
